@@ -1,0 +1,31 @@
+<?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
+/*********************************************************************************
+ * SugarCRM Japanese Language Pack is developed by OpenSourceCRM Inc.
+ * Copyright (C) 2007 - 2009 OpenSourceCRM Inc.
+ * 
+ * This program is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License version 3 as published by the
+ * Free Software Foundation.
+ * 
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+ * details.
+ * 
+ * You should have received a copy of the GNU General Public License along with
+ * this program; if not, see http://www.gnu.org/licenses or write to the Free
+ * Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ * 02110-1301 USA.
+ ********************************************************************************/
+
+$mod_strings = array (
+    'LBL_EMAIL_ADDRESS_ID' => 'ID',
+    'LBL_EMAIL_ADDRESS' => '電子メールアドレス',
+    'LBL_EMAIL_ADDRESS_CAPS' => '電子メールアドレス(大文字)',
+    'LBL_INVALID_EMAIL' => '不正電子メール',
+    'LBL_OPT_OUT' => 'オプトアウト',
+    'LBL_DATE_CREATE' => '作成日付',
+    'LBL_DATE_MODIFIED' => '変更日付',
+    'LBL_DELETED' => '削除',
+);
