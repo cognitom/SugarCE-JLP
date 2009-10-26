@@ -61,4 +61,5 @@ $mod_strings = array(
 'LBL_ASSISTANT'=>'アシスタント',
 'LBL_ASSISTANT_PHONE'=>'アシスタント電話番号',
 'LBL_WORK_PHONE'=>'勤務先電話番号',
+'LNK_IMPORT_VCARD' => 'Create From vCard',
 );

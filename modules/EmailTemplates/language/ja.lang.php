@@ -74,6 +74,7 @@ $mod_strings = array (
 	'LNK_MY_ARCHIVED_LIST'		=> '保存メール',
 	'LNK_MY_DRAFTS'				=> 'ドラフト',
 	'LNK_MY_INBOX'				=> '私のメール',
+	'LBL_LIST_BASE_MODULE'		=> 'Base Module:',
 
 
 
@@ -87,4 +88,5 @@ $mod_strings = array (
     'LBL_CREATED_BY'=>'作成者',
     'LBL_FROM_ADDRESS'=>'送信元アドレス',
     'LBL_PUBLISHED'=>'公開済み',
+    'LBL_ACTIVITIES_REPORTS' 	=> 'Activities Report',    
 );

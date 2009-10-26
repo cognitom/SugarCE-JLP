@@ -208,5 +208,8 @@ $mod_strings = array (
 
 
 
+    'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
+    'LBL_PROJECT_SUBPANEL_TITLE' => 'Projects',
+    'LBL_CAMPAIGNS_SUBPANEL_TITLE' => 'Campaigns',
     
 );

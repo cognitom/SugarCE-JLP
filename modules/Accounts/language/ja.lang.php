@@ -159,4 +159,7 @@ $mod_strings = array (
 	'NTC_REMOVE_ACCOUNT_CONFIRMATION' => '本当にこのレコードを削除して良いですか？',
 	'NTC_REMOVE_MEMBER_ORG_CONFIRMATION' => '本当にこのレコードを子会社から削除して良いですか？',
 	'LBL_ASSIGNED_USER_NAME' => 'アサイン先:',
+    'LBL_PROSPECT_LIST' => 'Prospect List',
+    'LBL_ACCOUNTS_SUBPANEL_TITLE'=>'Accounts',
+    'LBL_PROJECT_SUBPANEL_TITLE' => 'Projects',
 );

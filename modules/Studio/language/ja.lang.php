@@ -98,6 +98,7 @@ $mod_strings = array (
 'LBL_ED_WELCOME'=>'<h2>ドロップダウンの編集</h2><br><b>登録されているドロップダウン編集、またはドロップダウンの新規作成を行うことができます。</b>',
 'LBL_DROPDOWN_NAME' => 'ドロップダウン名:',
 'LBL_DROPDOWN_LANGUAGE' => 'ドロップダウン言語:',
+'LBL_TABGROUP_LANGUAGE' => 'Tab Group Language:',
 
 //EDIT CUSTOM FIELDS
 'LBL_EC_WELCOME'=>'<h2>カスタムフィールドの編集</h2><br><b>カスタムフィールドの表示、編集、新規作成、キャッシュのクリア、修復を行うことができます。</b>',
@@ -137,9 +138,12 @@ $mod_strings = array (
 'LBL_GROUP_TAB_WELCOME'=>'グループタブのレイアウトは、私の設定のレイアウトオプションでモジュールタブではなくグループタブを選択した場合に常に表示されます。',
 'LBL_RENAME_TAB_WELCOME'=>'下記テーブル内の任意のタブの表示名をクリックし、タブの名前を変更してください。',
 'LBL_DELETE_MODULE'=>'&nbsp;モジュールの削除',
+'LBL_DISPLAY_OTHER_TAB_HELP' => 'Select to display the "Other" tab in the navigation bar.  By default, the "Other" tab displays any modules not already included in other groups.',
+'LBL_TAB_GROUP_LANGUAGE_HELP' => 'To set the tab group labels for other available languages, select a language, edit the labels and click Save & Deploy to make the changes for that language.',
 'LBL_ADD_GROUP'=>'グループ追加',
 'LBL_NEW_GROUP'=>'新規グループ',
 'LBL_RENAME_TABS'=>'タブの名前を変更',
+'LBL_DISPLAY_OTHER_TAB' => 'Display \'Other\' Tab',
 
 //LIST VIEW EDITOR
 'LBL_DEFAULT'=>'デフォルト',

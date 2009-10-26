@@ -55,6 +55,7 @@ $mod_strings = array (
   'LBL_CONTACTS_SUBPANEL_TITLE' => '取引先担当者',
   'LBL_LEADS_SUBPANEL_TITLE' => 'リード',
   'LBL_PROSPECTS_SUBPANEL_TITLE'=>'ターゲット',
+  'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Accounts',
   'LBL_COPY_PREFIX' =>'複製',
   'LBL_USERS_SUBPANEL_TITLE' =>'ユーザ',
   'LBL_TYPE' => 'タイプ',

@@ -259,6 +259,7 @@ $mod_strings = array (
 	'LBL_SUB_TITLE_MY_SENT'		=> '私の送信済みメール: ホーム',
 	'LBL_LIST_TITLE_MY_ARCHIVES'=> '保存メール',
 	'LBL_SUB_TITLE_MY_ARCHIVES'=> '保存メール: ホーム',
+    'LBL_ACTIVITIES_REPORTS' 	=> 'Activities Report',    
 
 	'LNK_CHECK_MY_INBOX'		=> '私のメールをチェック',
 	'LNK_DATE_SENT'				=> '送信日',
@@ -267,6 +268,7 @@ $mod_strings = array (
 	'LNK_MY_INBOX'				=> '私のメール',
 	'LNK_QUICK_REPLY'			=> '返信',
 	'LNK_MY_ARCHIVED_LIST'		=> '保存メール',
+    'LBL_EMAILS_NO_PRIMARY_TEAM_SPECIFIED' =>'No Primary Team specified',
 
 	// advanced search
 	'LBL_ASSIGNED_TO'			=> 'アサイン先:',
@@ -281,4 +283,7 @@ $mod_strings = array (
 	'LBL_EMAILTEMPLATE_MESSAGE_SHOW_MSG' => '入力した内容が失われてしまいますが、指定したテンプレートを適用しますか?',
 	'LBL_CHECK_ATTACHMENTS'=>'添付ファイルをチェックしてください!',
 	'LBL_HAS_ATTACHMENTS' => 'この電子メールはすでに添付ファイルがあります。添付ファイルを保持しますか？',
+	'LBL_SEND_EMAIL_FAIL' => 'The system is unable to send the message using the outbound email account selected in the From field. Please check the settings for the account in the Mail Accounts tab in the Settings page, or select another account to use to send the message. Click OK to return to the message.',
+	'LBL_SEND_EMAIL_FAIL_TITLE' => 'Message Cannot be Sent',
+    'LBL_OPENSSL_EXTENSION_NOT_OPEN'=>'php_openssl extension is not enabled. Please contact Administrator.',
 );

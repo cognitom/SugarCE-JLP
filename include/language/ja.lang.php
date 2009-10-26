@@ -1467,6 +1467,7 @@ $app_list_strings = array (
     'Users'=>'ユーザ',
     'Prospects'=>'ターゲット',
     'Leads'=>'リード',
+    'Accounts'=>'Accounts',
   ),
 
   'merge_operators_dom' => array (
@@ -1678,11 +1679,18 @@ $app_list_strings = array (
         'Active' => 'アクティブ',
         'Inactive' => '非アクティブ',
     ),
+    'email_settings_for_ssl' =>
+    array (
+        '0' => '',
+        '1' => 'SSL',
+        '2' => 'TLS',
+    ),
 );
 
 $app_strings = array (
     'LBL_SORT'                              => 'ソート',
     'LBL_OUTBOUND_EMAIL_ADD_SERVER'         => 'サーバを追加...',
+	'LBL_EMAIL_SMTP_SSL_OR_TLS'					=> 'Enable SMTP over SSL or TLS',
 
     'LBL_ROUTING_ADD_RULE'                  => 'ルールを追加',
     'LBL_ROUTING_ALL'                       => 'すべての',
@@ -1737,7 +1745,7 @@ $app_strings = array (
     'LBL_ROUTING_WITH_TEMPLATE'             => 'テンプレートと共に',
 
 	'NTC_OVERWRITE_ADDRESS_PHONE_CONFIRM' => '会社電話、および住所情報の各フィールドがすでに入力されています。取引先に登録された情報で上書きする場合はOKボタンを、そうでない場合はキャンセルボタンをクリックしてください。',
-
+	'LBL_DROP_HERE' => '[Drop Here]',
     'LBL_EMAIL_ACCOUNTS_EDIT'               => '編集',
     'LBL_EMAIL_ACCOUNTS_GMAIL_DEFAULTS'     => 'Gmailのデフォルトをセット',
     'LBL_EMAIL_ACCOUNTS_NAME'               => '名前',
@@ -1750,6 +1758,7 @@ $app_strings = array (
     'LBL_EMAIL_ACCOUNTS_SMTPSSL'            => '接続時にSSLを使用',
     'LBL_EMAIL_ACCOUNTS_SMTPUSER'           => 'SMTPユーザ名',
     'LBL_EMAIL_ACCOUNTS_TITLE'              => '電子メールアカウント管理',
+    'LBL_EMAIL_POP3_REMOVE_MESSAGE'			=> 'Mail Server Protocol of type POP3 will not be supported in the next release. Only IMAP will be supported.',
 
     'LBL_EMAIL_ADD'                         => 'アドレスを追加',
 
@@ -1770,6 +1779,7 @@ $app_strings = array (
     'LBL_EMAIL_ADDRESS_BOOK_TITLE'          => 'アドレス帳',
     'LBL_EMAIL_REPORTS_TITLE'               => 'レポート',
     'LBL_EMAIL_ADDRESS_BOOK_TITLE_ICON'     => '<img src=themes/default/images/icon_email_addressbook.gif align=absmiddle border=0> アドレス帳',
+    'LBL_EMAIL_ADDRESS_BOOK_TITLE_ICON_SHORT'     => '<img width=14 height=14 src='.SugarThemeRegistry::current()->getImageURL('icon_email_addressbook.gif').' align=absmiddle border=0>',
 
     'LBL_EMAIL_ADDRESSES'                   => '電子メールアドレス',
     'LBL_EMAIL_ADDRESS_PRIMARY'             => '電子メール',
@@ -1869,9 +1879,11 @@ $app_strings = array (
     'LBL_EMAIL_ERROR_VIEW_RAW_SOURCE'       => 'この情報は有効ではありません。',
 
     'LBL_EMAIL_FOLDERS'                     => '<img src=themes/default/images/icon_email_folder.gif align=absmiddle border=0> フォルダ',
+    'LBL_EMAIL_FOLDERS_SHORT'               => '<img width=14 height=14 src='.SugarThemeRegistry::current()->getImageURL('icon_email_folder.gif').' align=absmiddle border=0>',
     'LBL_EMAIL_FOLDERS_ACTIONS'             => 'へ移動',
     'LBL_EMAIL_FOLDERS_ADD'                 => '追加',
     'LBL_EMAIL_FOLDERS_ADD_DIALOG_TITLE'    => '新たなフォルダを追加',
+    'LBL_EMAIL_FOLDERS_RENAME_DIALOG_TITLE' => 'Rename Folder',
     'LBL_EMAIL_FOLDERS_ADD_NEW_FOLDER'      => '新しいグループフォルダを追加',
     'LBL_EMAIL_FOLDERS_ADD_THIS_TO'         => 'このフォルダに追加',
     'LBL_EMAIL_FOLDERS_CHANGE_HOME'         => 'このフォルダは変更できません',
@@ -1956,6 +1968,7 @@ $app_strings = array (
     'LBL_EMAIL_MULTISELECT'                 => '複数選択するために<b>Ctrlを押しながらクリック</b>してください<br />(Macユーザは<b>CMDを押しながらクリック</b>)',
 
     'LBL_EMAIL_NO'                          => 'いいえ',
+    'LBL_EMAIL_NOT_SENT'                    => 'System is unable to process your request. Please contact the system administrator.',
 
     'LBL_EMAIL_OK'                          => 'OK',
     'LBL_EMAIL_ONE_MOMENT'                  => 'しばらくお待ちください...',
@@ -1999,6 +2012,7 @@ $app_strings = array (
 
     'LBL_EMAIL_SEARCHING'                   => '検索を実行中',
     'LBL_EMAIL_SEARCH'                      => '<img src=themes/default/images/Search.gif align=absmiddle border=0> 検索',
+    'LBL_EMAIL_SEARCH_SHORT'                => '<img width=14 height=14 src='.SugarThemeRegistry::current()->getImageURL('Search.gif').' align=absmiddle border=0>',
     'LBL_EMAIL_SEARCH_ADVANCED'             => '詳細検索',
     'LBL_EMAIL_SEARCH_DATE_FROM'            => '以下の指定日以降',
     'LBL_EMAIL_SEARCH_DATE_UNTIL'           => '以下の指定日まで',
@@ -2071,6 +2085,7 @@ $app_strings = array (
 
 
 
+    'LBL_EMAIL_TEMPLATE_EDIT_PLAIN_TEXT'    => 'Email template body is empty',
     'LBL_EMAIL_TEMPLATES'                   => 'テンプレート',
     'LBL_EMAIL_TEXT_FIRST'                  => '最初のページ',
     'LBL_EMAIL_TEXT_PREV'                   => '前のページ',
@@ -2174,6 +2189,7 @@ $app_strings = array (
     'LBL_ADD_BUTTON_TITLE' => '追加 [Alt+A]',
     'LBL_ADD_BUTTON' => '追加',
     'LBL_ADD_DOCUMENT' => 'ドキュメント追加',
+    'LBL_REPLACE_BUTTON' => 'Replace',
     'LBL_ADD_TO_PROSPECT_LIST_BUTTON_KEY' => 'L',
     'LBL_ADD_TO_PROSPECT_LIST_BUTTON_LABEL' => 'ターゲットリストに追加',
     'LBL_ADD_TO_PROSPECT_LIST_BUTTON_TITLE' => 'ターゲットリストに追加',
@@ -2266,6 +2282,12 @@ $app_strings = array (
     'LBL_EDIT_BUTTON' => '編集',
     'LBL_EDIT_AS_NEW_BUTTON_LABEL' => '新規として編集',
     'LBL_EDIT_AS_NEW_BUTTON_TITLE' => '新規として編集',
+    'LBL_VCARD' => 'vCard',
+    'LBL_EMPTY_VCARD' => 'Please select a vCard file',
+    'LBL_IMPORT_VCARD' => 'Import vCard:',
+    'LBL_IMPORT_VCARD_BUTTON_KEY' => 'I',
+    'LBL_IMPORT_VCARD_BUTTON_LABEL' => 'Import vCard',
+    'LBL_IMPORT_VCARD_BUTTON_TITLE' => 'Import vCard [Alt+I]',
     'LBL_VIEW_BUTTON_KEY' => 'V',
     'LBL_VIEW_BUTTON_LABEL' => '閲覧',
     'LBL_VIEW_BUTTON_TITLE' => '閲覧[Alt+V]',
@@ -2295,6 +2317,9 @@ $app_strings = array (
     'LBL_CAMPAIGN_CONTACT'=>'キャンペーン',
     'LBL_CAMPAIGN_ID'=>'キャンペーンID',
     'LBL_SITEMAP'=>'サイトマップ',
+    'LBL_THEME'=>'Theme:',
+    'LBL_THEME_PICKER'=>'Page Style',
+    'LBL_THEME_PICKER_IE6COMPAT_CHECK' => 'Warning: Internet Explorer 6 is not supported for the selected theme. Click OK to select it anyways or Cancel to select a different theme.',
     'LBL_FOUND_IN_RELEASE'=>'発見したリリース',
     'LBL_FIXED_IN_RELEASE'=>'修正したリリース',
     'LBL_LIST_ACCOUNT_NAME' => '取引先',
@@ -2407,6 +2432,9 @@ $app_strings = array (
     'LBL_SELECT_BUTTON_KEY' => 'T',
     'LBL_SELECT_BUTTON_LABEL' => '選択',
     'LBL_SELECT_BUTTON_TITLE' => '選択 [Alt+T]',
+    'LBL_SELECT_TEAMS_KEY' => 'Z',
+    'LBL_SELECT_TEAMS_LABEL' => 'Add Team(s)',
+    'LBL_SELECT_TEAMS_TITLE' => 'Add Teams(s) [Alt+Z]',
     'LBL_BROWSE_DOCUMENTS_BUTTON_KEY' => 'B',
     'LBL_BROWSE_DOCUMENTS_BUTTON_LABEL' => '参照',
     'LBL_BROWSE_DOCUMENTS_BUTTON_TITLE' => '参照 [Alt+B]',
@@ -2457,6 +2485,8 @@ $app_strings = array (
 
     'LBL_TASKS'=>'タスク',
     'LBL_TEAMS_LINK'=>'チーム',
+    'LBL_THEME_COLOR'=>'Color',
+    'LBL_THEME_FONT'=>'Font',
     'LBL_THOUSANDS_SYMBOL' => 'K',
     'LBL_TRACK_EMAIL_BUTTON_KEY' => 'K',
     'LBL_TRACK_EMAIL_BUTTON_LABEL' => '電子メール作成・保存',
@@ -2480,6 +2510,7 @@ $app_strings = array (
     'LNK_ABOUT' => '製品について',
     'LNK_ADVANCED_SEARCH' => '詳細検索',
     'LNK_BASIC_SEARCH' => '基本検索',
+    'LBL_MODIFY_CURRENT_SEARCH'=> 'Modify current search',
     'LNK_SAVED_VIEWS' => '保存済みビュー',
     'LNK_DELETE_ALL' => 'すべて削除',
     'LNK_DELETE' => '削除',
@@ -2596,6 +2627,7 @@ $app_strings = array (
     'LBL_TRAINING' => 'トレーニング',
     'ERR_DATABASE_CONN_DROPPED'=>'クエリの実行がエラーになりました。データベースへの接続が切れた可能性があります。このページを再読込みしてください。Webサーバの再起動が必要な場合もあります。',
     'ERR_MSSQL_DB_CONTEXT' =>'データベースコンテキストが変更されました',
+	'ERR_MSSQL_WARNING' =>'Warning:',
 
     //Meta-Data framework
     'ERR_MISSING_VARDEF_NAME' => '警告: フィールド[[field]]がvardefs.phpファイルの[moduleDir]でマップされたエントリを持っていません。',
@@ -2717,6 +2749,10 @@ $app_strings = array (
 
     //jc:#12287 - For javascript validation messages
     'MSG_IS_NOT_BEFORE' => 'は、次よりも前ではない ',
+	'MSG_IS_MORE_THAN' => 'is more than',
+	'MSG_IS_LESS_THAN' => 'is less than',
+	'MSG_SHOULD_BE' => 'should be',
+	'MSG_OR_GREATER' => 'or greater',
 
     'LBL_PORTAL_WELCOME_TITLE' => 'Sugar Portal 5.1.0へようこそ',
     'LBL_PORTAL_WELCOME_INFO' => 'Sugar Portalはケース、バグ、ニュースレターを素早くお客様に提供するフレームワークです。 どのようなWebサイトにも配置可能なSugarの外部インターフェースです。将来のバージョンでプロジェクトマネージメントやフォーラムなどのセルフサービス機能が提供され次第、お伝えします。',
@@ -2758,12 +2794,22 @@ $app_strings = array (
 	'LBL_MERGE_CONNECTORS_BUTTON_KEY' => '[D]',
 	'LBL_REMOVE_MODULE_ENTRY' => 'このモジュールへのコネクタの統合を無効化していいですか?',
 
+    // fastcgi checks
+    'LBL_FASTCGI_LOGGING'      => 'For optimal experience using IIS/FastCGI sapi, set fastcgi.logging to 0 in your php.ini file.',
+    
     //cma
     'LBL_MASSUPDATE_DELETE_GLOBAL_TEAM'=> 'Globalチームは削除できません。中断します。',
     'LBL_MASSUPDATE_DELETE_PRIVATE_TEAMS'=>'プライベートチームは削除できません。中断します。',
     //martin #25548
     'LBL_NO_FLASH_PLAYER' => 'Flashが無効化されているか古いバージョンのAdobe\'s Flash Playerを利用しています。<a href="http://www.adobe.com/go/getflashplayer/">最新のFlashプレーヤー</a>を取得するかFlashを有効化してください。',
+	//Collection Field
+	'LBL_COLLECTION_NAME' => 'Name',
+	'LBL_COLLECTION_PRIMARY' => 'Primary',
+	'ERROR_MISSING_COLLECTION_SELECTION' => 'Empty required field',
+    'LBL_COLLECTION_EXACT' => 'Exact',
 
+    // fastcgi checks
+    'LBL_FASTCGI_LOGGING'      => 'For optimal experience using IIS/FastCGI sapi, set fastcgi.logging to 0 in your php.ini file.',
 );
 
 $app_list_strings['moduleList']['Library'] = 'ライブラリ';

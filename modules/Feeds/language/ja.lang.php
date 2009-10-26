@@ -20,6 +20,7 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 *****************************************************************************/
 
 $mod_strings = array (
+  'LBL_ID' => 'ID',
   'LBL_MODULE_NAME' => 'RSSフィード',
   'LBL_MODULE_ID' => 'RSSフィード',  
   'LBL_MODULE_TITLE' => 'RSSフィード: ホーム',

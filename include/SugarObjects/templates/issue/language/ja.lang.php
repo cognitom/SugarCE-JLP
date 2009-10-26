@@ -40,5 +40,6 @@ $mod_strings = array (
   'LBL_SYSTEM_ID' =>'システムID:',
   'LBL_TEAM_NAME' =>'チーム名:',
   'LBL_TYPE'=>'タイプ:'
+  'LBL_SUBJECT' => 'Subject:',
   
   );

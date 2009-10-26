@@ -82,4 +82,6 @@ $mod_strings = array (
 
     'LBL_CREATED_USER' => '作成者',
     'LBL_MODIFIED_USER' => '更新者',
+
+        'LBL_PROJECT_SUBPANEL_TITLE' => 'Projects',
 );

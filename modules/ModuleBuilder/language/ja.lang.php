@@ -443,6 +443,7 @@ $mod_strings = array(
 'LBL_MB_RESTORE'=>'リストア',
 'LBL_MB_DELETE'=>'削除',
 'LBL_MB_COMPARE'=>'比較',
+'LBL_MB_DEFAULT_LAYOUT'=>'Default Layout',
 
 //END WIZARDS
 
@@ -549,6 +550,7 @@ $mod_strings = array(
 'LBL_LIST'=>'一覧',
 'LBL_LIST_VIEW'=>'リストビュー',
 'LBL_HISTORY'=>'履歴',
+'LBL_RESTORE_DEFAULT'=>'Restore Default',
 'LBL_ACTIVITIES'=>'活動',
 'LBL_SEARCH'=>'検索',
 'LBL_NEW'=>'新規',
@@ -562,6 +564,11 @@ $mod_strings = array(
 'LBL_MSUB'=>'関連モジュールで表示するためのサブパネルです。',
 'LBL_MB_IMPORTABLE'=>'インポート可能',
 'LBL_PACKAGE_WAS_DELETED'=>'[[package]]は削除されました。',
+
+// VISIBILITY EDITOR
+'LBL_VE_VISIBLE'=>'visible',
+'LBL_VE_HIDDEN'=>'hidden',
+'LBL_PACKAGE_WAS_DELETED'=>'[[package]] was deleted',
 
 //EXPORT CUSTOMS
 'LBL_EC_TITLE'=>'カスタマイズのエクスポート',
@@ -588,6 +595,7 @@ $mod_strings = array(
 
 //JS
 'LBL_JS_REMOVE_PACKAGE' => 'このパッケージを削除しても良いですか？ このパッケージに関連するファイルをすべて削除します。',
+'LBL_JS_REMOVE_MODULE' => 'Are you sure you wish to remove this module? This will permanently delete all files associated with this module.',
 
 'LBL_DEPLOY_IN_PROGRESS' => 'パッケージの配置',
 'LBL_JS_VALIDATE_NAME'=>'パッケージ名 - 空白を含まず英字から始まる英数字である必要があります',
@@ -612,6 +620,10 @@ $mod_strings = array(
 
 
 ,
+
+'LBL_DEPENDENT_DROPDOWN'=>'Dependent Dropdown',
+'LBL_TRIGGER_DROPDOWN'=>'Trigger Dropdown',
+
 
 'fieldTypes' => array(
 				'varchar'=>'TextField', 

@@ -34,4 +34,5 @@ $mod_strings = array (
 'LBL_ACCESS_DEFAULT'=>'設定なし',
 'LBL_ALL'=>'すべてのモジュール',
 'LBL_DUPLICATE_OF'=>' 複製: ',
+'LBL_USER_NAME_FOR_ROLE'=>'Users/Teams/Roles',
 );

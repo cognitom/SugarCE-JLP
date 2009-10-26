@@ -126,6 +126,7 @@ $mod_strings = array (
   'LBL_HOME_PAGE_1_NAME' => '私のSugar',
   'LBL_HOME_PAGE_2_NAME' => '営業ページ',
   'LBL_HOME_PAGE_3_NAME' => 'マーケティング＆サポートページ',
+  'LBL_HOME_PAGE_6_NAME' => 'Marketing Page',//bug 16510, separate the support and marketing page from each other
   'LBL_HOME_PAGE_4_NAME' => 'トラッカー',
 
 
@@ -207,6 +208,7 @@ $mod_strings = array (
   'LBL_SOURCE_TINYMCE' => 'TinyMCE - A WYSIWYG editor control for web browsers that enables the user to edit HTML contents',
   'LBL_SOURCE_EXT' => 'Ext - A client-side JavaScript framework for building web applications.',
   'LBL_SOURCE_RECAPTCHA' => 'reCAPTCHA helps prevent automated abuse of your site (such as comment spam or bogus registrations) by using a CAPTCHA to ensure that only humans perform certain actions.',
+  'LBL_SOURCE_TCPDF' => 'TCPDF - A PHP class for generating PDF documents.',
 
 
 

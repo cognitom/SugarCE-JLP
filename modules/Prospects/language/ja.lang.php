@@ -155,4 +155,5 @@ $mod_strings = array (
   'LBL_EDIT_ACCOUNT_NAME'=>'取引先:',
   'LBL_CREATED_USER' => '作成者',
   'LBL_MODIFIED_USER' => '更新者',
+  'LBL_CAMPAIGNS_SUBPANEL_TITLE' => 'Campaigns',
 );

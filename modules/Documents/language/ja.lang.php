@@ -128,4 +128,5 @@ $mod_strings = array (
     //'LNK_DOCUMENT_CAT'=>'Document Categories',
     'LBL_CONTRACTS' => '契約',
     'LBL_CREATED_USER' => '作成者',
+    'LBL_THEREVISIONS_SUBPANEL_TITLE' => 'Reversions',
 );

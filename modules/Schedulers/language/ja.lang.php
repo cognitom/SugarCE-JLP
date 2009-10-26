@@ -127,4 +127,14 @@ $mod_strings = array (
 // Subpanels
 'LBL_JOBS_SUBPANEL_TITLE'	=> 'アクティブなジョブ',
 'LBL_EXECUTE_TIME'			=> '実行時間',
+
+//jobstrings
+'LBL_REFRESHJOBS' => 'Refresh Jobs',
+'LBL_POLLMONITOREDINBOXES' => 'Check Inbound Mail Accounts',
+
+'LBL_RUNMASSEMAILCAMPAIGN' => 'Run Nightly Mass Email Campaigns',
+'LBL_POLLMONITOREDINBOXESFORBOUNCEDCAMPAIGNEMAILS' => 'Run Nightly Process Bounced Campaign Emails',
+
+'LBL_PRUNEDATABASE' => 'Prune Database on 1st of Month',
+'LBL_TRIMTRACKER' => 'Prune Tracker Tables',
 );

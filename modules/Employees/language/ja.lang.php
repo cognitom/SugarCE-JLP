@@ -80,6 +80,7 @@ $mod_strings = array (
   'LBL_ADDRESS_INFORMATION' => '住所情報',
   'LBL_EMPLOYEE_STATUS' => '従業員ステータス',
   'LBL_PRIMARY_ADDRESS' => '主となる住所:',
+  'LBL_SAVED_SEARCH' => 'Layout Options',
   'LBL_CREATE_USER_BUTTON_TITLE' => 'ユーザ作成 [Alt+N]',
   'LBL_CREATE_USER_BUTTON_LABEL' => 'ユーザを作成',
   'LBL_CREATE_USER_BUTTON_KEY' => 'N',

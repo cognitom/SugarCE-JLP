@@ -72,4 +72,7 @@ $mod_strings = array (
     'LBL_BTN_ADD' => '追加',
     'LBL_BTN_EDIT' => '編集',
     'LBL_GENERATE_URL' => 'URLの生成',
+	'LBL_DEPENDENT_CHECKBOX'=>'Dependent',
+	'LBL_DEPENDENT_TRIGGER'=>'Trigger',
+	'LBL_BTN_EDIT_VISIBILITY'=>'Edit Visibility',
 );

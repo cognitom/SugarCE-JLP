@@ -83,6 +83,7 @@ $mod_strings = array (
 	'LBL_SUBJECT' => '件名:',
 	'LBL_TIME' => '開始時間:',
 	'LBL_USERS_SUBPANEL_TITLE' => 'ユーザ',
+	'LBL_ACTIVITIES_REPORTS' => 'Activities Report',    
 	
 	'LNK_CALL_LIST'=>'コール',
 	'LNK_EMAIL_LIST'=>'電子メール',
