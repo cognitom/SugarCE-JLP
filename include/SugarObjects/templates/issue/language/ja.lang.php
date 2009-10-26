@@ -39,7 +39,7 @@ $mod_strings = array (
   'LBL_ASSIGNED_USER' => 'アサイン先ユーザ:',
   'LBL_SYSTEM_ID' =>'システムID:',
   'LBL_TEAM_NAME' =>'チーム名:',
-  'LBL_TYPE'=>'タイプ:'
+  'LBL_TYPE'=>'タイプ:',
   'LBL_SUBJECT' => 'Subject:',
   
   );
