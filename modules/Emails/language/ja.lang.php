@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -32,6 +33,14 @@
  * SugarCRM" logo. If the display of the logo is not reasonably feasible for
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
+ ********************************************************************************/
+
+/*********************************************************************************
+
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
  ********************************************************************************/
 
 $mod_strings = array(
@@ -321,7 +330,10 @@ $mod_strings = array(
 	'LBL_SMTP_SERVER_HELP'=>'This SMTP Mail Server can be used for outgoing mail. Provide a username and password for your email account in order to use the mail server.',
 	'LBL_MISSING_DEFAULT_OUTBOUND_SMTP_SETTINGS'=>'The administator has not yet configured the default outbound account.  Unable to send test email.',
 	'LBL_MAIL_SMTPAUTH_REQ'=>'Use SMTP Authentication?',
+	'LBL_MAIL_SMTPPASS'=> 'SMTP Password:',
 	'LBL_MAIL_SMTPPORT'=>'SMTP Port:',
+	'LBL_MAIL_SMTPSERVER'=> 'SMTP Server:',
+	'LBL_MAIL_SMTPUSER'=> 'SMTP Username:',
 	'LBL_MAIL_SMTPTYPE'=>'SMTP Server Type:',
 	'LBL_MAIL_SMTP_SETTINGS'=>'SMTP Server Specification',
 	'LBL_CHOOSE_EMAIL_PROVIDER'=>'Choose your Email provider:',
@@ -333,4 +345,29 @@ $mod_strings = array(
 	'LBL_EXCHANGE_SMTPUSER'=>'Exchange Username:',
 	'LBL_EXCHANGE_SMTPPORT'=>'Exchange Server Port:',
 	'LBL_EXCHANGE_SMTPSERVER'=>'Exchange Server:',
+
+	'LBL_EDIT_LAYOUT' => 'Edit Layout' /*for 508 compliance fix*/,
+	'LBL_ATTACHMENT' => 'Attachment' /*for 508 compliance fix*/,
+	'LBL_DELETE_INLINE' => 'Delete' /*for 508 compliance fix*/,
+	'LBL_CREATE_CASES' => 'Create Cases' /*for 508 compliance fix*/,
+	'LBL_CREATE_LEADS' => 'Create Leads' /*for 508 compliance fix*/,
+	'LBL_CREATE_CONTACTS' => 'Create Contacts' /*for 508 compliance fix*/,
+	'LBL_CREATE_BUGS' => 'Create Bugs' /*for 508 compliance fix*/,
+	'LBL_CREATE_TASKS' => 'Create Tasks' /*for 508 compliance fix*/,
+	'LBL_CHECK_INLINE' => 'Correct' /*for 508 compliance fix*/,
+	'LBL_CLOSE' => 'Close' /*for 508 compliance fix*/,
+	'LBL_HELP' => 'Help' /*for 508 compliance fix*/,
+	'LBL_GMAIL_LOGO' => 'Gmail' /*for 508 compliance fix*/,
+	'LBL_YAHOO_MAIL' => 'Yahoo' /*for 508 compliance fix*/,
+	'LBL_EXCHANGE_LOGO' => 'Exchange' /*for 508 compliance fix*/,
+	'LBL_WAIT' => 'Wait' /*for 508 compliance fix*/,
+	'LBL_CHECKEMAIL' => 'Check Email' /*for 508 compliance fix*/,
+	'LBL_COMPOSEEMAIL' => 'Compose Email' /*for 508 compliance fix*/,
+	'LBL_EMAILSETTINGS' => 'Email Settings' /*for 508 compliance fix*/,
+
+	// SNIP
+	'LBL_CONTACTS_SUBPANEL_TITLE_SNIP' => 'Email Contacts',
+	'LBL_EMAILS_MEETINGS_REL' => 'Emails:Meetings',
+	'LBL_DATE_CREATED' => 'Date Created',
+	'LBL_DATE_MODIFIED' => 'Date Modified',
 );

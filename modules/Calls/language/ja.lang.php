@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -32,6 +33,14 @@
  * SugarCRM" logo. If the display of the logo is not reasonably feasible for
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
+ ********************************************************************************/
+
+/*********************************************************************************
+
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
  ********************************************************************************/
 
 $mod_strings = array(
@@ -85,6 +94,10 @@ $mod_strings = array(
 	'LBL_LAST_NAME'=>'姓',
 	'LBL_EMAIL'=>'電子メール',
 	'LBL_PHONE'=>'電話',
+    'LBL_REMINDER' => 'Reminders:',
+    'LBL_REMINDER_POPUP' => 'Popup',
+    'LBL_REMINDER_EMAIL' => 'Email',
+    'LBL_EMAIL_REMINDER_TIME' => 'Email Reminder Time',
 	'LBL_SEND_BUTTON_TITLE'=>'招待送信 [Alt+I]',
 	'LBL_SEND_BUTTON_KEY'=>'I',
 	'LBL_SEND_BUTTON_LABEL'=>'招待送信',
@@ -114,4 +127,23 @@ $mod_strings = array(
 	'NOTICE_DURATION_TIME'=>'時間は0以上である必要があります。',
 	'LBL_CALL_INFORMATION'=>'Call Overview',
 	'LBL_REMOVE'=>'rem',
+    'LBL_ACCEPT_STATUS' => 'Accept Status',
+    'LBL_ACCEPT_LINK' => 'Accept Link',
+    //For export labels
+    'LBL_PARENT_ID' => 'Parent ID',
+    'LBL_EXPORT_MODIFIED_USER_ID' => 'Modified By ID',
+    'LBL_EXPORT_CREATED_BY' => 'Created By ID',
+    'LBL_EXPORT_ASSIGNED_USER_ID' => 'Assigned User ID',
+    'LBL_EXPORT_DATE_START' => 'Start Date and Time',
+    'LBL_EXPORT_PARENT_TYPE' => 'Related To Module',
+    'LBL_EXPORT_REMINDER_TIME' =>'Reminder Time (in minutes)',
+    
+    // create invitee functionallity
+    'LBL_CREATE_INVITEE' => 'Create an invitee',
+    'LBL_CREATE_CONTACT' => 'As Contact',
+    'LBL_CREATE_LEAD' => 'As Lead',
+    'LBL_CREATE_AND_ADD' => 'Create & Add',
+    'LBL_CANCEL_CREATE_INVITEE' => 'Cancel',
+    'LBL_EMPTY_SEARCH_RESULT' => 'Sorry, no results were found. Please create an invitee below.',
+    'LBL_NO_ACCESS' => 'You have no access to create $module',
 );

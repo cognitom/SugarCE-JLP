@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -32,6 +33,14 @@
  * SugarCRM" logo. If the display of the logo is not reasonably feasible for
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
+ ********************************************************************************/
+
+/*********************************************************************************
+
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
  ********************************************************************************/
 
 $mod_strings = array(
@@ -102,6 +111,7 @@ $mod_strings = array(
 	'LBL_CHARTS'=>'チャート一覧',
 	'LBL_TOOLS'=>'ツール',
 	'LBL_WEB'=>'Web',
+	'LBL_SEARCH_RESULTS' => 'Search Result',
 	'dashlet_categories_dom'=>array(
 		'Module Views'=>'モジュールビュー',
 		'Portal'=>'ポータル',
@@ -198,10 +208,25 @@ $mod_strings = array(
 	'LBL_SOURCE_EXT'=>'Ext - A client-side JavaScript framework for building web applications.',
 	'LBL_SOURCE_RECAPTCHA'=>'reCAPTCHA helps prevent automated abuse of your site (such as comment spam or bogus registrations) by using a CAPTCHA to ensure that only humans perform certain actions.',
 	'LBL_SOURCE_TCPDF'=>'TCPDF - A PHP class for generating PDF documents.',
+  'LBL_SOURCE_CSSMIN' => 'CssMin - A css parser and minifier.',
+  'LBL_SOURCE_PHPSAML' => 'PHP-SAML - A simple SAML toolkit for PHP.',
+  'LBL_SOURCE_ISCROLL' => 'iScroll - The overflow:scroll for mobile webkit.  Native scrolling inside a fixed width/height element.',
+  'LBL_SOURCE_FLASHCANVAS' => 'FlashCanvas - FlashCanvas is a JavaScript library which adds the HTML5 Canvas support to Internet Explorer. It renders shapes and images via Flash drawing API. It supports almost all Canvas APIs and, in many cases, runs faster than other similar libraries which use VML or Silverlight.',
+  'LBL_SOURCE_JIT' => 'JavaScript InfoVis Toolkit - The JavaScript InfoVis Toolkit provides tools for creating Interactive Data Visualizations for the Web.',
+  'LBL_SOURCE_ZEND' => 'Zend Framework - An open source, object oriented web application framework for PHP5.',
+  'LBL_SOURCE_PARSECSV' => 'parseCSV - CSV data parser for PHP',
+  'LBL_SOURCE_PHPJS' => 'php.js - Use PHP functions in JavaScript',
+  'LBL_SOURCE_PHPSQL' => 'PHP SQL Parser',
+  'LBL_SOURCE_HTMLPURIFIER' => 'HTML Purifier - A standards-compliant HTML filtering library.',
+
 	'LBL_DASHLET_TITLE'=>'My Sites',
 	'LBL_DASHLET_OPT_TITLE'=>'Title',
 	'LBL_DASHLET_OPT_URL'=>'Website Location',
 	'LBL_DASHLET_OPT_HEIGHT'=>'Dashlet Height (in pixels)',
 	'LBL_DASHLET_SUGAR_NEWS'=>'Sugar News',
 	'LBL_DASHLET_DISCOVER_SUGAR_PRO'=>'Discover Sugar',
+	'LBL_POWERED_BY_SUGAR' => 'Powered By SugarCRM' /*for 508 compliance fix*/,
+	'LBL_MORE_DETAIL' => 'More Detail' /*for 508 compliance fix*/,
+	'LBL_BASIC_SEARCH' => 'Basic Search' /*for 508 compliance fix*/,
+	'LBL_ADVANCED_SEARCH' => 'Advanced Search' /*for 508 compliance fix*/,
 );

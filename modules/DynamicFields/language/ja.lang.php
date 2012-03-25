@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -33,6 +34,15 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
+
+/*********************************************************************************
+
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
+ ********************************************************************************/
+
 
 $mod_strings = array(
 	'LNK_NEW_CALL'=>'コール作成',
@@ -66,6 +76,7 @@ $mod_strings = array(
 	'COLUMN_TITLE_HTML_CONTENT'=>'HTML',
 	'COLUMN_TITLE_URL'=>'Default URL',
 	'COLUMN_TITLE_AUDIT'=>'Audit',
+        'COLUMN_TITLE_FTS' =>'Full Text Searchable',
 	'COLUMN_TITLE_REPORTABLE'=>'Reportable',
 	'COLUMN_TITLE_MIN_VALUE'=>'Min Value',
 	'COLUMN_TITLE_MAX_VALUE'=>'Max Value',
@@ -74,6 +85,8 @@ $mod_strings = array(
 	'COLUMN_TITLE_DISPLAYED_ITEM_COUNT'=>'# Items displayed',
 	'COLUMN_TITLE_AUTOINC_NEXT'=>'Auto Increment Next Value',
 	'COLUMN_DISABLE_NUMBER_FORMAT'=>'Disable Format',
+    'COLUMN_TITLE_ENABLE_RANGE_SEARCH' => 'Enable Range Search',
+    'COLUMN_TITLE_GLOBAL_SEARCH'=>'Global Search',	
 	'LBL_DROP_DOWN_LIST'=>'Drop Down List',
 	'LBL_RADIO_FIELDS'=>'Radio Fields',
 	'LBL_MULTI_SELECT_LIST'=>'Multi Select List',
@@ -94,6 +107,7 @@ $mod_strings = array(
 	'LBL_REPORTABLE'=>'Reportable',
 	'ERR_RESERVED_FIELD_NAME'=>'Reserved Keyword',
 	'ERR_SELECT_FIELD_TYPE'=>'Please Select a Field Type',
+	'ERR_FIELD_NAME_ALREADY_EXISTS' => 'Field Name already exists',
 	'LBL_BTN_ADD'=>'Add',
 	'LBL_BTN_EDIT'=>'Edit',
 	'LBL_GENERATE_URL'=>'Generate URL',
@@ -107,4 +121,10 @@ $mod_strings = array(
 	'LBL_IMAGE_WIDTH'=>'Width',
 	'LBL_IMAGE_HEIGHT'=>'Height',
 	'LBL_IMAGE_BORDER'=>'Border',
+	'COLUMN_TITLE_VALIDATE_US_FORMAT' => 'U.S. Format',
+	'LBL_DEPENDENT'=>'Dependent',
+	'LBL_VISIBLE_IF'=>'Visible If',
+	'LBL_ENFORCED'=>'Enforced',
+	'LBL_HELP' => 'Help' /*for 508 compliance fix*/,
+	'COLUMN_TITLE_GLOBAL_SEARCH'=>'Global Search',
 );

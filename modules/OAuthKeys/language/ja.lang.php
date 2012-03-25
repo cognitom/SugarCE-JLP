@@ -35,37 +35,30 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-/*********************************************************************************
 
- * Description:  Defines the English language pack for the base application.
- * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
- * All Rights Reserved.
- * Contributor(s): ______________________________________..
- ********************************************************************************/
-
-$mod_strings = array(
-	'LBL_ID'=>'ID',
-	'LBL_TRACKER_KEY'=>'トラッカーキー',
-	'LBL_TRACKER_URL'=>'トラッカーURL',
-	'LBL_TRACKER_NAME'=>'トラッカー名',
-	'LBL_CAMPAIGN_ID'=>'キャンペーンID',
-	'LBL_DATE_ENTERED'=>'入力日',
-	'LBL_DATE_MODIFIED'=>'更新日',
-	'LBL_MODIFIED_USER_ID'=>'修正されたユーザID',
-	'LBL_CREATED_BY'=>'作成者',
-	'LBL_DELETED'=>'削除済み',
-	'LBL_CAMPAIGN'=>'キャンペーン',
-	'LBL_OPTOUT'=>'解約',
-	'LBL_MODULE_NAME'=>'キャンペーントラッカー',
-	'LBL_EDIT_CAMPAIGN_NAME'=>'キャンペーン名:',
-	'LBL_EDIT_TRACKER_NAME'=>'トラッカー名:',
-	'LBL_EDIT_TRACKER_URL'=>'トラッカーURL:',
-	'LBL_SUBPANEL_TRACKER_NAME'=>'名前',
-	'LBL_SUBPANEL_TRACKER_URL'=>'URL',
-	'LBL_SUBPANEL_TRACKER_KEY'=>'キー',
-	'LBL_EDIT_MESSAGE_URL'=>'キャンペーンメッセージ用URL:',
-	'LBL_EDIT_TRACKER_KEY'=>'トラッカーキー:',
-	'LBL_EDIT_OPT_OUT'=>'解約リンク',
-	'LNK_CAMPAIGN_LIST'=>'キャンペーン',
-	'LBL_EDIT_LAYOUT' => 'Edit Layout' /*for 508 compliance fix*/,
+$mod_strings = array (
+  'LBL_CONSKEY' => 'Consumer Key',
+  'LBL_CONSSECRET' => 'Consumer Secret',
+  'LBL_ASSIGNED_TO_ID' => 'Assigned User Id',
+  'LBL_ASSIGNED_TO_NAME' => 'User',
+  'LBL_ID' => 'ID',
+  'LBL_DATE_ENTERED' => 'Date Created',
+  'LBL_DATE_MODIFIED' => 'Date Modified',
+  'LBL_MODIFIED' => 'Modified By',
+  'LBL_MODIFIED_ID' => 'Modified By Id',
+  'LBL_MODIFIED_NAME' => 'Modified By Name',
+  'LBL_CREATED' => 'Created By',
+  'LBL_CREATED_ID' => 'Created By Id',
+  'LBL_DESCRIPTION' => 'Description',
+  'LBL_DELETED' => 'Deleted',
+  'LBL_NAME' => 'Consumer Key Name',
+  'LBL_CREATED_USER' => 'Created By User',
+  'LBL_MODIFIED_USER' => 'Modified By User',
+  'LBL_LIST_NAME' => 'Key Name',
+  'LBL_LIST_FORM_TITLE' => 'OAuth Keys',
+  'LBL_MODULE_NAME' => 'OAuth Keys',
+  'LBL_MODULE_TITLE' => 'OAuth Keys',
+  'LNK_NEW_RECORD' => 'Create OAuth Key',
+  'LNK_LIST' => 'View OAuth Keys',
+  'LBL_TOKENS' => 'Tokens',
 );

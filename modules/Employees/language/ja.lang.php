@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -34,6 +35,14 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
+/*********************************************************************************
+
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
+ ********************************************************************************/
+
 $mod_strings = array(
 	'LBL_MODULE_NAME'=>'従業員',
 	'LBL_MODULE_TITLE'=>'従業員: ホーム',
@@ -63,6 +72,7 @@ $mod_strings = array(
 	'LBL_PASSWORD'=>'パスワード:',
 	'LBL_EMPLOYEE_NAME'=>'従業員氏名:',
 	'LBL_USER_NAME'=>'ユーザ名:',
+  'LBL_USER_TYPE' => 'User Type',
 	'LBL_FIRST_NAME'=>'名:',
 	'LBL_LAST_NAME'=>'姓:',
 	'LBL_EMPLOYEE_SETTINGS'=>'従業員の設定',
@@ -91,6 +101,8 @@ $mod_strings = array(
 	'LBL_OTHER'=>'その他電話:',
 	'LBL_FAX'=>'ファックス:',
 	'LBL_EMAIL'=>'電子メール:',
+  'LBL_EMAIL_LINK_TYPE'				=> 'Email Client',
+  'LBL_EMAIL_LINK_TYPE_HELP'			=> '<b>Sugar Mail Client:</b> Send emails using the email client in the Sugar application.<br><b>External Mail Client:</b> Send email using an email client outside of the Sugar application, such as Microsoft Outlook.',
 	'LBL_HOME_PHONE'=>'自宅電話:',
 	'LBL_WORK_PHONE'=>'会社電話:',
 	'LBL_ADDRESS_INFORMATION'=>'住所情報',
@@ -119,4 +131,34 @@ $mod_strings = array(
 	'LBL_PHOTO'=>'Photo',
 	'LBL_DELETE_USER_CONFIRM'=>'This Employee is also a User. Deleting the Employee record will also delete the User record, and the User will no longer be able to access the application. Do you want to proceed with deleting this record?',
 	'LBL_DELETE_EMPLOYEE_CONFIRM'=>'Are you sure you want to delete this employee?',
+  'LBL_ONLY_ACTIVE' => 'Active Employees',
+	'LBL_SELECT' => 'Select' /*for 508 compliance fix*/,
+	'LBL_FF_CLEAR' => 'Clear' /*for 508 compliance fix*/,
+  'LBL_AUTHENTICATE_ID' => 'Authentication Id',
+  'LBL_EXT_AUTHENTICATE' => 'External Authentication',
+  'LBL_GROUP_USER' => 'Group User',
+  'LBL_LIST_ACCEPT_STATUS' => 'Accept Status',
+  'LBL_MODIFIED_BY' =>'Modified By',
+  'LBL_MODIFIED_BY_ID' =>'Modified By Id',
+  'LBL_CREATED_BY_NAME' => 'Created By', //bug48978
+  'LBL_PORTAL_ONLY_USER' => 'Portal API User',
+  'LBL_PSW_MODIFIED' => 'Password Last Changed',
+  'LBL_SHOW_ON_EMPLOYEES' => 'Display Employee Record',
+  'LBL_USER_HASH' => 'Password',
+  'LBL_SYSTEM_GENERATED_PASSWORD' =>'System Generated Password',
+  'LBL_DESCRIPTION'	=> 'Description',
+  'LBL_FAX_PHONE'						=> 'Fax',
+  'LBL_FAX'							=> 'Fax',
+  'LBL_STATUS'						=> 'Status',
+  'LBL_ADDRESS_CITY'					=> 'Address City',
+  'LBL_ADDRESS_COUNTRY'				=> 'Address Country',
+  'LBL_ADDRESS_INFORMATION'			=> 'Address Information',
+  'LBL_ADDRESS_POSTALCODE'			=> 'Address Postal Code',
+  'LBL_ADDRESS_STATE'					=> 'Address State',
+  'LBL_ADDRESS_STREET'				=> 'Address Street',
+  'LBL_ADDRESS'						=> 'Address',
+  
+  'LBL_DATE_MODIFIED' => 'Date Modified',
+  'LBL_DATE_ENTERED' => 'Date Entered',
+  'LBL_DELETED' => 'Deleted',
 );

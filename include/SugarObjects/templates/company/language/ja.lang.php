@@ -47,6 +47,7 @@ $mod_strings = array(
 	'LBL_ANY_PHONE'=>'電話:',
 	'LBL_ASSIGNED_TO_NAME'=>'アサイン先:',
 	'LBL_RATING'=>'格付け',
+	'LBL_ASSIGNED_TO' => 'Assigned to:',
 	'LBL_ASSIGNED_USER'=>'アサイン先:',
 	'LBL_ASSIGNED_TO_ID'=>'アサイン先:',
 	'LBL_BILLING_ADDRESS_CITY'=>'請求先市区町村:',
@@ -90,6 +91,7 @@ $mod_strings = array(
 	'LBL_PHONE_FAX'=>'会社ファックス:',
 	'LBL_PHONE_OFFICE'=>'会社電話:',
 	'LBL_PHONE'=>'電話:',
+	'LBL_EMAIL_ADDRESS' => 'Email Address',
 	'LBL_EMAIL_ADDRESS'=>'Email Address(es)',
 	'LBL_POSTAL_CODE'=>'郵便番号:',
 	'LBL_PUSH_BILLING'=>'請求する',
@@ -104,6 +106,7 @@ $mod_strings = array(
 	'LBL_SHIPPING_ADDRESS_STREET_4'=>'出荷先住所 4',
 	'LBL_SHIPPING_ADDRESS_STREET'=>'出荷先番地その他:',
 	'LBL_SHIPPING_ADDRESS'=>'出荷先住所:',
+	
 	'LBL_STATE'=>'都道府県:',
 	'LBL_TICKER_SYMBOL'=>'証券コード:',
 	'LBL_TYPE'=>'タイプ:',
@@ -112,10 +115,13 @@ $mod_strings = array(
 	'LBL_USERS_MODIFIED_LINK'=>'更新ユーザ一覧',
 	'LBL_VIEW_FORM_TITLE'=>'取引先ビュー',
 	'LBL_WEBSITE'=>'Webサイト:',
+	
 	'LNK_ACCOUNT_LIST'=>'取引先',
 	'LNK_NEW_ACCOUNT'=>'取引先作成',
+	
 	'MSG_DUPLICATE'=>'この取引先を作成すると、データが重複する可能性があります。以下のリストから取引先を選択するか、<b>保存</b>をクリックして新しい取引先の作成を続けてください。',
 	'MSG_SHOW_DUPLICATES'=>'この取引先を作成すると、データが重複する可能性があります。<b>保存</b>をクリックして新しい取引先の作成を続けるか、<b>キャンセル</b>をクリックしてください。',
+
 	'NTC_COPY_BILLING_ADDRESS'=>'請求先住所を出荷先住所にコピー',
 	'NTC_COPY_BILLING_ADDRESS2'=>'出荷先へコピー',
 	'NTC_COPY_SHIPPING_ADDRESS'=>'出荷先住所を請求先住所にコピー',

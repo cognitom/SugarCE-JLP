@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -34,6 +35,7 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
+
 $mod_strings = array(
 	'LBL_ADD_MODULE'=>'追加',
 	'LBL_ADDRCITY'=>'市区町村',
@@ -55,6 +57,8 @@ $mod_strings = array(
 	'LBL_DUNS'=>'DUNS(企業識別コード)',
 	'LBL_EMPTY_BEANS'=>'検索条件に適合するものはありません。',
 	'LBL_ENABLED'=>'有効',
+    'LBL_EXTERNAL' => 'Enable users to create external account records to this connector.',
+    'LBL_EXTERNAL_SET_PROPERTIES' => ' In order to use this connector, the properties should also be set in the Set Connector Properties settings page.',
 	'LBL_FINSALES'=>'Finsales',
 	'LBL_MARKET_CAP'=>'時価総額',
 	'LBL_MERGE'=>'マージ',
@@ -96,6 +100,7 @@ $mod_strings = array(
 	'LBL_TEST_SOURCE_SUCCESS'=>'テスト成功',
 	'LBL_TITLE'=>'データマージ',
 	'LBL_ULTIMATE_PARENT_DUNS'=>'ルートDUNS(企業識別コード)',
+	
 	'ERROR_RECORD_NOT_SELECTED'=>'エラー: 実行前にリストからレコードを選択してください。',
 	'ERROR_EMPTY_WRAPPER'=>'エラー: ソース[{$source_id}]へのラッパーインスタンスを取得できません。',
 	'ERROR_EMPTY_SOURCE_ID'=>'エラー: ソースIDが指定されていないか空です。',

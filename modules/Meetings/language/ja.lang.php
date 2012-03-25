@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -32,6 +33,14 @@
  * SugarCRM" logo. If the display of the logo is not reasonably feasible for
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
+ ********************************************************************************/
+
+/*********************************************************************************
+
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
  ********************************************************************************/
 
 $mod_strings = array(
@@ -85,9 +94,13 @@ $mod_strings = array(
 	'LBL_NAME'=>'名前',
 	'LBL_NEW_FORM_TITLE'=>'アポイント作成',
 	'LBL_OUTLOOK_ID'=>'Outlook ID',
+	'LBL_SEQUENCE' => 'Meeting update sequence',
 	'LBL_PHONE'=>'会社電話:',
 	'LBL_REMINDER_TIME'=>'リマインダー時間',
 	'LBL_REMINDER'=>'リマインダー:',
+	'LBL_REMINDER_POPUP' => 'Popup',
+	'LBL_REMINDER_EMAIL' => 'Email',
+    'LBL_EMAIL_REMINDER_TIME' => 'Email Reminder Time',
 	'LBL_REMOVE'=>'rem',
 	'LBL_SCHEDULING_FORM_TITLE'=>'スケジューリング',
 	'LBL_SEARCH_BUTTON'=>'検索',
@@ -96,10 +109,19 @@ $mod_strings = array(
 	'LBL_SEND_BUTTON_LABEL'=>'招待送信',
 	'LBL_SEND_BUTTON_TITLE'=>'招待送信 [Alt+I]',
 	'LBL_STATUS'=>'ステータス:',
+    'LBL_TYPE' => 'Meeting Type',
+    'LBL_PASSWORD' => 'Meeting Password',
+    'LBL_URL' => 'Start/Join Meeting',
+    'LBL_HOST_URL' => 'Host URL',
+    'LBL_DISPLAYED_URL' => 'Display URL',
+    'LBL_CREATOR' => 'Meeting Creator',
+    'LBL_EXTERNALID' => 'External App ID',
 	'LBL_SUBJECT'=>'件名:',
 	'LBL_TIME'=>'開始時間:',
 	'LBL_USERS_SUBPANEL_TITLE'=>'ユーザ',
 	'LBL_ACTIVITIES_REPORTS'=>'Activities Report',
+    'LBL_PARENT_TYPE' => 'Parent Type',
+    'LBL_PARENT_ID' => 'Parent ID',
 	'LNK_MEETING_LIST'=>'ミーティング',
 	'LNK_NEW_APPOINTMENT'=>'アポイント作成',
 	'LNK_NEW_MEETING'=>'ミーティング作成',
@@ -109,4 +131,43 @@ $mod_strings = array(
 	'LBL_MODIFIED_USER'=>'更新者',
 	'NOTICE_DURATION_TIME'=>'時間は0以上である必要があります。',
 	'LBL_MEETING_INFORMATION'=>'Meeting Overview',
+	'LBL_LIST_JOIN_MEETING' => 'Join Meeting',
+	'LBL_JOIN_EXT_MEETING' => 'Join Meeting',
+	'LBL_HOST_EXT_MEETING' => 'Start Meeting',
+    'LBL_ACCEPT_STATUS' => 'Accept Status',
+    'LBL_ACCEPT_LINK' => 'Accept Link',
+    // You are not invited to the meeting messages
+    'LBL_EXTNOT_HEADER' => 'Error: Not Invited',
+    'LBL_EXTNOT_MAIN' => 'You are not able to join this meeting because you are not an Invitee.',
+    'LBL_EXTNOT_RECORD_LINK' => 'View Meeting',
+    'LBL_EXTNOT_GO_BACK' => 'Go back to the previous record',
+
+    //cannot start messages
+    'LBL_EXTNOSTART_HEADER' => 'Error: Cannot Start Meeting',
+    'LBL_EXTNOSTART_MAIN' => 'You cannot start this meeting because you are not an Administrator or the owner of the meeting.',
+
+  //For export labels
+    'LBL_EXPORT_JOIN_URL' => 'Join Url',
+    'LBL_EXPORT_HOST_URL' => 'Host Url',
+    'LBL_EXPORT_DISPLAYED_URL' => 'Displayed Url',
+    'LBL_EXPORT_ASSIGNED_USER_ID' => 'Assigned User ID',
+    'LBL_EXPORT_EXTERNAL_ID' => 'External ID',
+    'LBL_EXPORT_ASSIGNED_USER_NAME' => 'Assigned User Name',
+    'LBL_EXPORT_MODIFIED_USER_ID' => 'Modified By ID',
+    'LBL_EXPORT_CREATED_BY' => 'Created By ID',
+
+    'LBL_EXPORT_DATE_START' => 'Start Date and Time',
+    'LBL_EXPORT_DATE_END' => 'End Date and Time',
+    'LBL_EXPORT_PARENT_TYPE' => 'Related Type',
+    'LBL_EXPORT_PARENT_ID' => 'Parent ID',
+    'LBL_EXPORT_REMINDER_TIME' =>'Reminder Time (in minutes)',
+    
+    // create invitee functionallity
+    'LBL_CREATE_INVITEE' => 'Create an invitee',
+    'LBL_CREATE_CONTACT' => 'As Contact',
+    'LBL_CREATE_LEAD' => 'As Lead',
+    'LBL_CREATE_AND_ADD' => 'Create & Add',
+    'LBL_CANCEL_CREATE_INVITEE' => 'Cancel',
+    'LBL_EMPTY_SEARCH_RESULT' => 'Sorry, no results were found. Please create an invitee below.',
+    'LBL_NO_ACCESS' => 'You have no access to create $module',
 );

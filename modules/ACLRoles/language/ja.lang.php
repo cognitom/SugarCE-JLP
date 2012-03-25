@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -35,20 +36,21 @@
  ********************************************************************************/
 
 $mod_strings = array(
-	'LBL_MODULE_NAME'=>'役割',
-	'LBL_MODULE_TITLE'=>'役割: ホーム',
-	'LBL_ROLE'=>'役割',
-	'LBL_NAME'=>'名前',
-	'LBL_DESCRIPTION'=>'詳細',
-	'LIST_ROLES'=>'役割',
-	'LBL_USERS_SUBPANEL_TITLE'=>'ユーザ',
-	'LIST_ROLES_BY_USER'=>'ユーザ別役割',
+'LBL_MODULE_NAME' => 'Roles',
+'LBL_MODULE_TITLE' => 'Roles: Home',
+'LBL_ROLE'=>'Role',
+'LBL_NAME'=>'Name',
+'LBL_DESCRIPTION'=>'Description',
+'LIST_ROLES'=>'List Roles',
+'LBL_USERS_SUBPANEL_TITLE'=>'Users',
+'LIST_ROLES_BY_USER'=>'List Roles By User',
 	'LBL_LIST_FORM_TITLE'=>'Roles',
-	'LBL_ROLES_SUBPANEL_TITLE'=>'ユーザの役割',
+'LBL_ROLES_SUBPANEL_TITLE'=>'User Roles',
 	'LBL_SEARCH_FORM_TITLE'=>'検索',
 	'LBL_CREATE_ROLE'=>'役割作成',
 	'LBL_EDIT_VIEW_DIRECTIONS'=>'値を変更するにはセルをダブルクリックしてください。',
 	'LBL_ACCESS_DEFAULT'=>'設定なし',
+'LBL_ACTION_ADMIN'=>'Access Type',
 	'LBL_ALL'=>'すべてのモジュール',
 	'LBL_DUPLICATE_OF'=>' 複製: ',
 );

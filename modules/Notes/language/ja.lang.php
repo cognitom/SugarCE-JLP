@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -32,6 +33,14 @@
  * SugarCRM" logo. If the display of the logo is not reasonably feasible for
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
+ ********************************************************************************/
+
+/*********************************************************************************
+
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
  ********************************************************************************/
 
 $mod_strings = array(
@@ -91,4 +100,14 @@ $mod_strings = array(
 	'LBL_ACTIVITIES_REPORTS'=>'Activities Report',
 	'LBL_PANEL_DETAILS'=>'Details',
 	'LBL_NOTE_INFORMATION'=>'Note Overview',
+	'LBL_MY_NOTES_DASHLETNAME' => 'My Notes',
+	'LBL_EDITLAYOUT' => 'Edit Layout' /*for 508 compliance fix*/,
+    //For export labels
+	'LBL_FIRST_NAME' => 'First Name',
+    'LBL_LAST_NAME' => 'Last Name',
+    'LBL_EXPORT_PARENT_TYPE' => 'Related To Module',
+    'LBL_EXPORT_PARENT_ID' => 'Related To ID',
+    'LBL_DATE_ENTERED' => 'Date Created',
+    'LBL_DATE_MODIFIED' => 'Date Modified',
+    'LBL_DELETED' => 'Deleted',
 );

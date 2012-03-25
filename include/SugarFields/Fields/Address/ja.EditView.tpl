@@ -1,7 +1,7 @@
 {*
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -33,6 +33,7 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
+
 *}
 <script type="text/javascript" src='{sugar_getjspath file="include/SugarFields/Fields/Address/SugarFieldAddress.js"}'></script>
 {{assign var="key" value=$displayParams.key|upper}}
@@ -46,7 +47,7 @@
 <table border="0" cellspacing="1" cellpadding="0" class="edit" width="100%">
 <tr>
 <td valign="top" id="{{$street}}_label" width='25%' scope='row' >
-{sugar_translate label='LBL_STREET' module='{{$module}}'}:
+<label for="{{$street}}">{sugar_translate label='LBL_{{$key}}_STREET' module='{{$module}}'}:</label>
 {if $fields.{{$street}}.required || {{if $street|lower|in_array:$displayParams.required}}true{{else}}false{{/if}}}
 <span class="required">{$APP.LBL_REQUIRED_SYMBOL}</span>
 {/if}
@@ -63,7 +64,7 @@
 <tr>
 
 <td id="{{$city}}_label" width='{{$def.templateMeta.widths[$smarty.foreach.colIteration.index].label}}%' scope='row' >
-{sugar_translate label='LBL_CITY' module='{{$module}}'}:
+<label for="{{$city}}">{sugar_translate label='LBL_CITY' module='{{$module}}'}:
 {if $fields.{{$city}}.required || {{if $city|lower|in_array:$displayParams.required}}true{{else}}false{{/if}}}
 <span class="required">{$APP.LBL_REQUIRED_SYMBOL}</span>
 {/if}
@@ -75,7 +76,7 @@
 
 <tr>
 <td id="{{$state}}_label" width='{{$def.templateMeta.widths[$smarty.foreach.colIteration.index].label}}%' scope='row' >
-{sugar_translate label='LBL_STATE' module='{{$module}}'}:
+<label for="{{$state}}">{sugar_translate label='LBL_STATE' module='{{$module}}'}:</label>
 {if $fields.{{$state}}.required || {{if $state|lower|in_array:$displayParams.required}}true{{else}}false{{/if}}}
 <span class="required">{$APP.LBL_REQUIRED_SYMBOL}</span>
 {/if}
@@ -89,7 +90,7 @@
 
 <td id="{{$postalcode}}_label" width='{{$def.templateMeta.widths[$smarty.foreach.colIteration.index].label}}%' scope='row' >
 
-{sugar_translate label='LBL_POSTAL_CODE' module='{{$module}}'}:
+<label for="{{$postalcode}}">{sugar_translate label='LBL_POSTAL_CODE' module='{{$module}}'}:</label>
 {if $fields.{{$postalcode}}.required || {{if $postalcode|lower|in_array:$displayParams.required}}true{{else}}false{{/if}}}
 <span class="required">{$APP.LBL_REQUIRED_SYMBOL}</span>
 {/if}
@@ -103,7 +104,7 @@
 
 <td id="{{$country}}_label" width='{{$def.templateMeta.widths[$smarty.foreach.colIteration.index].label}}%' scope='row' >
 
-{sugar_translate label='LBL_COUNTRY' module='{{$module}}'}:
+<label for="{{$country}}">{sugar_translate label='LBL_COUNTRY' module='{{$module}}'}:</label>
 {if $fields.{{$country}}.required || {{if $country|lower|in_array:$displayParams.required}}true{{else}}false{{/if}}}
 <span class="required">{$APP.LBL_REQUIRED_SYMBOL}</span>
 {/if}
@@ -119,7 +120,7 @@
 {sugar_translate label='LBL_COPY_ADDRESS_FROM_LEFT' module=''}:
 </td>
 <td>
-<input id="{{$displayParams.key}}_checkbox" name="{{$displayParams.key}}_checkbox" type="checkbox" onclick="syncFields('{{$displayParams.copy}}', '{{$displayParams.key}}');"; CHECKED>
+<input id="{{$displayParams.key}}_checkbox" name="{{$displayParams.key}}_checkbox" type="checkbox" onclick="{{$displayParams.key}}_address.syncFields();">
 </td>
 </tr>
 {{else}}
@@ -130,8 +131,7 @@
 </table>
 </fieldset>
 <script type="text/javascript">
-    var fromKey = '{{$displayParams.copy}}';
-    var toKey = '{{$displayParams.key}}';
-    var checkbox = toKey + "_checkbox";
-    var obj = new TestCheckboxReady(checkbox);
+    SUGAR.util.doWhen("typeof(SUGAR.AddressField) != 'undefined'", function(){ldelim}
+		{{$displayParams.key}}_address = new SUGAR.AddressField("{{$displayParams.key}}_checkbox",'{{$displayParams.copy}}', '{{$displayParams.key}}');
+	{rdelim});
 </script>

@@ -35,37 +35,19 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-/*********************************************************************************
 
- * Description:  Defines the English language pack for the base application.
- * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
- * All Rights Reserved.
- * Contributor(s): ______________________________________..
- ********************************************************************************/
 
-$mod_strings = array(
-	'LBL_ID'=>'ID',
-	'LBL_TRACKER_KEY'=>'トラッカーキー',
-	'LBL_TRACKER_URL'=>'トラッカーURL',
-	'LBL_TRACKER_NAME'=>'トラッカー名',
-	'LBL_CAMPAIGN_ID'=>'キャンペーンID',
-	'LBL_DATE_ENTERED'=>'入力日',
-	'LBL_DATE_MODIFIED'=>'更新日',
-	'LBL_MODIFIED_USER_ID'=>'修正されたユーザID',
-	'LBL_CREATED_BY'=>'作成者',
-	'LBL_DELETED'=>'削除済み',
-	'LBL_CAMPAIGN'=>'キャンペーン',
-	'LBL_OPTOUT'=>'解約',
-	'LBL_MODULE_NAME'=>'キャンペーントラッカー',
-	'LBL_EDIT_CAMPAIGN_NAME'=>'キャンペーン名:',
-	'LBL_EDIT_TRACKER_NAME'=>'トラッカー名:',
-	'LBL_EDIT_TRACKER_URL'=>'トラッカーURL:',
-	'LBL_SUBPANEL_TRACKER_NAME'=>'名前',
-	'LBL_SUBPANEL_TRACKER_URL'=>'URL',
-	'LBL_SUBPANEL_TRACKER_KEY'=>'キー',
-	'LBL_EDIT_MESSAGE_URL'=>'キャンペーンメッセージ用URL:',
-	'LBL_EDIT_TRACKER_KEY'=>'トラッカーキー:',
-	'LBL_EDIT_OPT_OUT'=>'解約リンク',
-	'LNK_CAMPAIGN_LIST'=>'キャンペーン',
-	'LBL_EDIT_LAYOUT' => 'Edit Layout' /*for 508 compliance fix*/,
+$mod_strings = array (
+    'LBL_OAUTH_REQUEST' => "Request Token",
+    'LBL_OAUTH_AUTHORIZE' => "Authorize Token",
+	'LBL_OAUTH_CONSUMERREQ' => "Authorize token from consumer <b>%s</b>?",
+    'LBL_OAUTH_ROLE' => "Token role",
+	'LBL_OAUTH_VALIDATION' => "Verification code",
+  	'LBL_ASSIGNED_TO_NAME' => 'User',
+  	'LBL_ID' => 'ID',
+    'LBL_STATUS' => 'Status',
+    'LBL_TS' => 'Timestamp',
+    'LBL_LIST_DELETE' => 'Delete Token',
+    'LBL_CONSUMER' => 'Consumer Name',
+    'LBL_OAUTH_DISABLED' => 'OAuth support not enabled. PHP oauth extension may be missing. Please contact your administrator.',
 );

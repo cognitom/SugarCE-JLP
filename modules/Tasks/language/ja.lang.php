@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -32,6 +33,14 @@
  * SugarCRM" logo. If the display of the logo is not reasonably feasible for
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
+ ********************************************************************************/
+
+/*********************************************************************************
+
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
  ********************************************************************************/
 
 $mod_strings = array(
@@ -97,4 +106,16 @@ $mod_strings = array(
 	'LBL_PARENT_NAME'=>'親タイプ:',
 	'LBL_ACTIVITIES_REPORTS'=>'Activities Report',
 	'LBL_TASK_INFORMATION'=>'Task Overview',
+  'LBL_EDITLAYOUT' => 'Edit Layout' /*for 508 compliance fix*/,
+  'LBL_TASK_INFORMATION' => 'Overview',
+  'LBL_HISTORY_SUBPANEL_TITLE' => 'Notes',
+  //For export labels
+  'LBL_DATE_DUE' => 'Date Due',
+  'LBL_EXPORT_ASSIGNED_USER_NAME' => 'Assigned User Name',
+  'LBL_EXPORT_ASSIGNED_USER_ID' => 'Assigned User ID',
+  'LBL_EXPORT_MODIFIED_USER_ID' => 'Modified By ID',
+  'LBL_EXPORT_CREATED_BY' => 'Created By ID',
+  'LBL_EXPORT_PARENT_TYPE' => 'Related To Module',
+  'LBL_EXPORT_PARENT_ID' => 'Related To ID',
+
 );

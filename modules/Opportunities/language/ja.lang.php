@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -34,6 +35,14 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
+/*********************************************************************************
+
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
+ ********************************************************************************/
+
 $mod_strings = array(
 	'LBL_MODULE_NAME'=>'商談',
 	'LBL_MODULE_TITLE'=>'商談: ホーム',
@@ -55,10 +64,12 @@ $mod_strings = array(
 	'LBL_CURRENCY_ID'=>'通貨ID',
 	'LBL_CURRENCY_NAME'=>'通貨名',
 	'LBL_CURRENCY_SYMBOL'=>'通貨シンボル',
+	//DON'T CONVERT THESE THEY ARE MAPPINGS
 	'db_sales_stage'=>'LBL_LIST_SALES_STAGE',
 	'db_name'=>'LBL_NAME',
 	'db_amount'=>'LBL_LIST_AMOUNT',
 	'db_date_closed'=>'LBL_LIST_DATE_CLOSED',
+	//END DON'T CONVERT
 	'UPDATE'=>'商談の通貨更新',
 	'UPDATE_DOLLARAMOUNTS'=>'USドルの金額を更新',
 	'UPDATE_VERIFY'=>'金額を検証',
@@ -109,6 +120,7 @@ $mod_strings = array(
 	'LBL_ACTIVITIES_SUBPANEL_TITLE'=>'活動',
 	'LBL_HISTORY_SUBPANEL_TITLE'=>'履歴',
 	'LBL_RAW_AMOUNT'=>'金額',
+	
 	'LBL_LEADS_SUBPANEL_TITLE'=>'リード',
 	'LBL_CONTACTS_SUBPANEL_TITLE'=>'取引先担当者',
 	'LBL_PROJECTS_SUBPANEL_TITLE'=>'プロジェクト',
@@ -127,4 +139,16 @@ $mod_strings = array(
 	'LBL_PROJECT_SUBPANEL_TITLE'=>'Projects',
 	'LABEL_PANEL_ASSIGNMENT'=>'Assignment',
 	'LNK_IMPORT_OPPORTUNITIES'=>'Import Opportunities',
+  'LBL_EDITLAYOUT' => 'Edit Layout' /*for 508 compliance fix*/,
+  //For export labels
+    'LBL_EXPORT_CAMPAIGN_ID' => 'Campaign ID',
+    'LBL_OPPORTUNITY_TYPE' => 'Opportunity Type',
+    'LBL_EXPORT_ASSIGNED_USER_NAME' => 'Assigned User Name',
+    'LBL_EXPORT_ASSIGNED_USER_ID' => 'Assigned User ID',
+    'LBL_EXPORT_MODIFIED_USER_ID' => 'Modified By ID',
+    'LBL_EXPORT_CREATED_BY' => 'Created By ID',
+    'LBL_EXPORT_NAME'=>'Name',
+
+  // SNIP
+  'LBL_CONTACT_HISTORY_SUBPANEL_TITLE' => 'Related Contacts\' Emails',
 );

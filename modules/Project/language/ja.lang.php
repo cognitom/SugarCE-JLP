@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -40,6 +41,7 @@ $mod_strings = array(
 	'LBL_SEARCH_FORM_TITLE'=>'プロジェクト検索',
 	'LBL_LIST_FORM_TITLE'=>'プロジェクト一覧',
 	'LBL_HISTORY_TITLE'=>'履歴',
+	
 	'LBL_ID'=>'ID:',
 	'LBL_DATE_ENTERED'=>'入力日:',
 	'LBL_DATE_MODIFIED'=>'最終更新日:',
@@ -59,8 +61,10 @@ $mod_strings = array(
 	'LBL_STATUS'=>'ステータス:',
 	'LBL_MY_PROJECTS'=>'私のプロジェクト',
 	'LBL_MY_PROJECT_TASKS'=>'私のプロジェクトタスク',
+	
 	'LBL_TOTAL_ESTIMATED_EFFORT'=>'見積時間合計:',
 	'LBL_TOTAL_ACTUAL_EFFORT'=>'実績時間合計:',
+	
 	'LBL_LIST_NAME'=>'名前',
 	'LBL_LIST_DAYS'=>'日',
 	'LBL_LIST_ASSIGNED_USER_ID'=>'アサイン先',
@@ -71,23 +75,29 @@ $mod_strings = array(
 	'LBL_LIST_OPEN_CASES'=>'オープンケース',
 	'LBL_LIST_END_DATE'=>'終了日',
 	'LBL_LIST_TEAM_ID'=>'チーム',
+	
 	'LBL_PROJECT_SUBPANEL_TITLE'=>'プロジェクト',
 	'LBL_PROJECT_TASK_SUBPANEL_TITLE'=>'プロジェクトタスク',
 	'LBL_CONTACT_SUBPANEL_TITLE'=>'取引先担当者',
 	'LBL_ACCOUNT_SUBPANEL_TITLE'=>'取引先',
 	'LBL_OPPORTUNITY_SUBPANEL_TITLE'=>'商談',
 	'LBL_QUOTE_SUBPANEL_TITLE'=>'見積',
+	
 	'LBL_NEW_FORM_TITLE'=>'プロジェクト作成',
+	
 	'CONTACT_REMOVE_PROJECT_CONFIRM'=>'本当にこの取引先担当者を削除して良いですか？',
+	
 	'LNK_NEW_PROJECT'=>'プロジェクト作成',
 	'LNK_PROJECT_LIST'=>'プロジェクト',
 	'LNK_NEW_PROJECT_TASK'=>'プロジェクトタスク作成',
 	'LNK_PROJECT_TASK_LIST'=>'プロジェクトタスク',
+	
 	'LBL_DEFAULT_SUBPANEL_TITLE'=>'プロジェクト',
 	'LBL_ACTIVITIES_TITLE'=>'活動',
 	'LBL_ACTIVITIES_SUBPANEL_TITLE'=>'活動',
 	'LBL_HISTORY_SUBPANEL_TITLE'=>'履歴',
 	'LBL_QUICK_NEW_PROJECT'=>'プロジェクト作成',
+	
 	'LBL_PROJECT_TASKS_SUBPANEL_TITLE'=>'プロジェクトタスク',
 	'LBL_CONTACTS_SUBPANEL_TITLE'=>'取引先担当者',
 	'LBL_ACCOUNTS_SUBPANEL_TITLE'=>'取引先',
@@ -95,6 +105,7 @@ $mod_strings = array(
 	'LBL_CASES_SUBPANEL_TITLE'=>'ケース',
 	'LBL_BUGS_SUBPANEL_TITLE'=>'バグトラッカー',
 	'LBL_PRODUCTS_SUBPANEL_TITLE'=>'商品',
+	
 	'LBL_TASK_ID'=>'ID',
 	'LBL_TASK_NAME'=>'タスク名',
 	'LBL_DURATION'=>'時間',
@@ -120,4 +131,8 @@ $mod_strings = array(
 	'LBL_PROJECTTASK_SUBPANEL_TITLE'=>'Project Task',
 	'LBL_HOLIDAYS_SUBPANEL_TITLE'=>'Holidays',
 	'LBL_PROJECT_INFORMATION'=>'Project Overview',
+	'LBL_EDITLAYOUT' => 'Edit Layout' /*for 508 compliance fix*/,
+	'LBL_INSERTROWS' => 'Insert Rows' /*for 508 compliance fix*/,
+	'LBL_PROJECT_INFORMATION' => 'Overview',
+
 );

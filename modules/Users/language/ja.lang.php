@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -32,6 +33,14 @@
  * SugarCRM" logo. If the display of the logo is not reasonably feasible for
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
+ ********************************************************************************/
+
+/*********************************************************************************
+
+ * Description:	Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
  ********************************************************************************/
 
 $mod_strings = array(
@@ -434,6 +443,8 @@ $mod_strings = array(
 	'LBL_MAIL_SMTPSERVER'=>'SMTPサーバ',
 	'LBL_SMTP_SERVER_HELP'=>'This SMTP Mail Server can be used for outgoing mail. Provide a username and password for your email account in order to use the mail server.',
 	'LBL_MISSING_DEFAULT_OUTBOUND_SMTP_SETTINGS'=>'The administator has not yet configured the default outbound account.  Unable to send test email.',
+	'LBL_MAIL_SMTPAUTH_REQ'=>'Use SMTP Authentication?',
+	'LBL_MAIL_SMTPPORT'=>'SMTP Port:',
 	'LBL_MAIL_SMTPTYPE'=>'SMTP Server Type:',
 	'LBL_MAIL_SMTP_SETTINGS'=>'SMTP Server Specification',
 	'LBL_CHOOSE_EMAIL_PROVIDER'=>'Choose your Email provider:',
@@ -448,6 +459,7 @@ $mod_strings = array(
 	'LBL_OK'=>'OK',
 	'LBL_CANCEL'=>'Cancel',
 	'LBL_DELETE_USER'=>'Delete User',
+	// Wizard
 	'LBL_WIZARD_TITLE'=>'User Wizard',
 	'LBL_WIZARD_WELCOME_TAB'=>'Welcome',
 	'LBL_WIZARD_WELCOME_TITLE'=>'Welcome to Sugar!',
@@ -469,10 +481,57 @@ $mod_strings = array(
 <tr><td colspan=2><hr style=\"margin: 5px 0px;\"></td></tr>
 <tr><td><img src=include/images/forums.png style=\"margin-right: 5px;\"></td><td><a href=\"http://www.sugarcrm.com/forums\" target=\"_blank\"><b>Forums</b></a><br>Forums dedicated to the Sugar Community to discuss topics of interest with each other and with SugarCRM Developers</td></tr>
 </table>',
+
+	'LBL_WIZARD_FINISH1' => 'What would you like to do next?',
+	'LBL_WIZARD_FINISH2' => 'Start Using Sugar',
+	'LBL_WIZARD_FINISH3' => 'Import Data ',
+	'LBL_WIZARD_FINISH4' => 'Import data from external sources into the application.',
+	'LBL_WIZARD_FINISH5' => 'Create Users',
+	'LBL_WIZARD_FINISH6' => 'Create new user accounts for people to use to access the application.',
+	'LBL_WIZARD_FINISH7' => 'View and Manage Application Settings',
+	'LBL_WIZARD_FINISH8' => 'Manage advanced settings, including default application settings.',
+	'LBL_WIZARD_FINISH9' => 'Configure the Application ',
+	'LBL_WIZARD_FINISH10' => 'Use Studio to create and manage application fields and layouts.',
+	'LBL_WIZARD_FINISH11' => 'Visit Sugar University ',
+	'LBL_WIZARD_FINISH12' => 'Find training materials and classes that will help you get started as a system administrator or end user of the application.',
+	'LBL_WIZARD_FINISH14' => 'Documentation ',
+	'LBL_WIZARD_FINISH15' => 'Product Guides and Release Notes ',
+	'LBL_WIZARD_FINISH16' => 'Knowledge Base ',
+	'LBL_WIZARD_FINISH17' => 'Tips from SugarCRM Support for performing common tasks and processes in Sugar ',
+	'LBL_WIZARD_FINISH18' => 'Forums ',
+	'LBL_WIZARD_FINISH19' => 'Forums dedicated to the Sugar Community to discuss topics of interest with each other and with SugarCRM Developers ',
+	'LBL_WIZARD_FINISH2DESC' => 'Go directly to the application Home page.',
 	'LBL_WIZARD_PERSONALINFO'=>'Your Information',
 	'LBL_WIZARD_LOCALE'=>'Your Locale',
 	'LBL_WIZARD_SMTP'=>'Your Email Account',
 	'LBL_WIZARD_PERSONALINFO_DESC'=>'Provide information about yourself. The information you provide about yourself will be visible to other Sugar users.<br />Fields marked with <span class=\"required\">*</span> are required.',
 	'LBL_WIZARD_LOCALE_DESC'=>'Specify your time zone and how you would like dates, currencies and names to appear in Sugar.',
 	'LBL_WIZARD_SMTP_DESC'=>'Provide your email account username and password for the default outbound email server.',
+	'LBL_EAPM_SUBPANEL_TITLE' => 'External Accounts',
+	
+	'LBL_EDITLAYOUT' => 'Edit Layout' /*for 508 compliance fix*/,
+	'LBL_HELP' => 'Help' /*for 508 compliance fix*/,
+	'LBL_CHECKMARK' => 'Checkmark' /*for 508 compliance fix*/,
+	'LBL_THEMEPREVIEW' => 'Preview' /*for 508 compliance fix*/,
+	
+	'LBL_OAUTH_TOKENS' => 'OAuth Tokens',
+	'LBL_OAUTH_TOKENS_SUBPANEL_TITLE' => "OAuth Access Tokens",
+	
+	//For export labels
+	'LBL_MODIFIED_USER_ID' => 'Modified User ID',
+	'LBL_PHONE_HOME' => 'Phone Home',
+	'LBL_PHONE_MOBILE' => 'Phone Mobile',
+	'LBL_PHONE_WORK' => 'Phone Work',
+	'LBL_PHONE_OTHER' => 'Phone Other',
+	'LBL_PHONE_FAX' => 'Phone Fax',
+	'LBL_PORTAL_ONLY' => 'Portal Only',
+	'LBL_SHOW_ON_EMPLOYEES' => 'Display Employee Record',
+	'LBL_IS_GROUP' => 'Is Group',
+	'LBL_EXPORT_CREATED_BY' => 'Created By ID',
+	
+	'LBL_DATE_MODIFIED' => 'Date Modified',
+	'LBL_DATE_ENTERED' => 'Date Entered',
+	'LBL_DELETED' => 'Deleted',
+	'LBL_HIDEOPTIONS' => 'Hide Options',
+	'LBL_SHOWOPTIONS' => 'Show Options',
 );

@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -174,6 +175,7 @@ $mod_strings = array(
 	'LBL_ALLOW_OUTBOUND_GROUP_USAGE_DESC'=>'When this option is selected, the From Name and From Email Address associated with this group mail account will appear as an option for the From field when composing emails for users that have access to the group mail account.',
 	'LBL_STATUS_ACTIVE'=>'アクティブ',
 	'LBL_STATUS_INACTIVE'=>'非アクティブ',
+    'LBL_IS_PERSONAL' => 'personal',
 	'LBL_IS_GROUP'=>'グループ',
 	'LBL_ENABLE_AUTO_IMPORT'=>'Import Emails Automatically',
 	'LBL_WARNING_CHANGING_AUTO_IMPORT'=>'Warning: You are modifying your automatic import setting which may result in loss of data.',

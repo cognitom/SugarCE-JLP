@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -34,9 +35,17 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
+/*********************************************************************************
+
+ * Description:
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc. All Rights
+ * Reserved. Contributor(s): ______________________________________..
+ * *******************************************************************************/
+
 $mod_strings = array(
 	'DESC_MODULES_INSTALLED'=>'以下のモジュールがインストール済みです:',
 	'DESC_MODULES_QUEUED'=>'以下のモジュールがインストール待ちです:',
+	
 	'ERR_UW_CANNOT_DETERMINE_GROUP'=>'グループが特定できません。',
 	'ERR_UW_CANNOT_DETERMINE_USER'=>'オーナーが特定できません。',
 	'ERR_UW_CONFIG_WRITE'=>'新たなバージョン情報でconfig.phpを更新中にエラー。',
@@ -82,6 +91,7 @@ $mod_strings = array(
 	'LBL_BUTTON_NEXT'=>'次へ',
 	'LBL_BUTTON_RECHECK'=>'再チェック',
 	'LBL_BUTTON_RESTART'=>'Restart',
+	
 	'LBL_UPLOAD_UPGRADE'=>'アップグレードファイルのアップロード: ',
 	'LBL_UPLOAD_FILE_NOT_FOUND'=>'アップロードファイルが見つかりません',
 	'LBL_UW_BACKUP_FILES_EXIST_TITLE'=>'ファイルバックアップ',
@@ -91,10 +101,8 @@ $mod_strings = array(
 	'LBL_UW_CHARSET_SCHEMA_CHANGE'=>'キャラクターセットスキーマの変更',
 	'LBL_UW_CHECK_ALL'=>'すべてチェック',
 	'LBL_UW_CHECKLIST'=>'アップグレードステップ',
-	'LBL_UW_COMMIT_ADD_TASK_DESC_1'=>'上書きされるファイルのバックアップは以下のディレクトリにあります。
-',
-	'LBL_UW_COMMIT_ADD_TASK_DESC_2'=>'以下のファイルは手作業でマージしてください:
-',
+	'LBL_UW_COMMIT_ADD_TASK_DESC_1'=>'上書きされるファイルのバックアップは以下のディレクトリにあります。',
+	'LBL_UW_COMMIT_ADD_TASK_DESC_2'=>'以下のファイルは手作業でマージしてください:',
 	'LBL_UW_COMMIT_ADD_TASK_NAME'=>'アップグレードプロセス: 手作業でファイルをマージ',
 	'LBL_UW_COMMIT_ADD_TASK_OVERVIEW'=>'最適な差分ツールを用いて、これらのファイルをマージしてください。この作業が完了するまで、このSugarCRMインスタンスは不安定な状態になり、アップグレードが完了しません。',
 	'LBL_UW_COMPLETE'=>'完了',
@@ -114,8 +122,10 @@ $mod_strings = array(
 	'LBL_UW_COMPLIANCE_TITLE'=>'サーバの設定',
 	'LBL_UW_COMPLIANCE_TITLE2'=>'検出された問題',
 	'LBL_UW_COMPLIANCE_XML'=>'XMLのパース',
+	
 	'LBL_UW_COPIED_FILES_TITLE'=>'ファイルのコピーが成功しました。',
 	'LBL_UW_CUSTOM_TABLE_SCHEMA_CHANGE'=>'カスタムテーブルのスキーマの変更',
+	
 	'LBL_UW_DB_CHOICE1'=>'アップグレードウィザードがSQLを実行',
 	'LBL_UW_DB_CHOICE2'=>'マニュアルでSQLをで実行',
 	'LBL_UW_DB_INSERT_FAILED'=>'INSERTの失敗ー比較した結果が異なります。',
@@ -141,6 +151,7 @@ $mod_strings = array(
 	'LBL_UW_END_LOGOUT'=>'パッチ/アップグレードの適用をさらに続ける場合は、一度ログアウトしてください。',
 	'LBL_UW_END_LOGOUT2'=>'ログアウト',
 	'LBL_UW_REPAIR_INDEX'=>'データベースのパフォーマンスを向上させるためには、<a href=\"index.php?module=Administration&action=RepairIndex\" target=\"_blank\">インデックスのリペア</a>のスクリプトを実行してください。',
+	
 	'LBL_UW_FILE_DELETED'=>' 削除されました。<br>',
 	'LBL_UW_FILE_GROUP'=>'グループ',
 	'LBL_UW_FILE_ISSUES_PERMS'=>'ファイルパーミッション',
@@ -152,8 +163,7 @@ $mod_strings = array(
 	'LBL_UW_FILE_UPLOADED'=>' がアップロードされました。',
 	'LBL_UW_FILE'=>'ファイル名',
 	'LBL_UW_FILES_QUEUED'=>'以下のアップグレードがインストール待ちです:',
-	'LBL_UW_FILES_REMOVED'=>'以下のファイルはシステムから削除されます：<br>
-',
+	'LBL_UW_FILES_REMOVED'=>'以下のファイルはシステムから削除されます：<br>',
 	'LBL_UW_NEXT_TO_UPLOAD'=>'<b>Click Next to upload upgrade packages.</b>',
 	'LBL_UW_FROZEN'=>'処理を継続する前に以下のステップを完了する必要があります。',
 	'LBL_UW_HIDE_DETAILS'=>'詳細を非表示',
@@ -162,8 +172,7 @@ $mod_strings = array(
 	'LBL_UW_INCOMPLETE'=>'未完了',
 	'LBL_UW_INSTALL'=>'ファイルインストール',
 	'LBL_UW_MANUAL_MERGE'=>'ファイルマージ',
-	'LBL_UW_MODULE_READY_UNINSTALL'=>'アンインストールの準備ができました。\"実行\"ボタンをクリックして処理を続行してください。<br>
-',
+	'LBL_UW_MODULE_READY_UNINSTALL'=>'アンインストールの準備ができました。\"実行\"ボタンをクリックして処理を続行してください。<br>',
 	'LBL_UW_MODULE_READY'=>'インストールの準備ができました。\"実行\"ボタンをクリックして処理を続行してください。',
 	'LBL_UW_NO_INSTALLED_UPGRADES'=>'アップグレードは行われていません。',
 	'LBL_UW_NONE'=>'なし',
@@ -174,6 +183,7 @@ $mod_strings = array(
 	'LBL_UW_OVERWRITE_FILES'=>'マージの方法',
 	'LBL_UW_PATCH_READY'=>'パッチを実行する準備が出来ました。実行（Commit）ボタンを押すとアップグレードが開始されます。',
 	'LBL_UW_PATCH_READY2'=>'<h2>注意: カスタマイズされたレイアウトが見つかりました。</h2><br />以下のファイルはスタジオによって追加されたフィールドもしくはレイアウトを持っています。インストールをしようとしているパッチはこれらのファイルに対する更新を含みます。<u>それぞれのファイル</u>に 対し、次を選択できます。<br><ul><li>[<b>デフォルト</b>] チェックボックスをブランクのままにすると、カスタマイズされた更新を保持します。パッチの修正は無視されます。</li>もしくは<li>チェックボックスに印を入れるとパッチによる更新を適用します。カスタマイズした内容は再度スタジオなどで適用する必要があります。</li></ul>',
+
 	'LBL_UW_PREFLIGHT_ADD_TASK'=>'手作業でのマージのためにタスクを作成しますか？',
 	'LBL_UW_PREFLIGHT_COMPLETE'=>'事前チェック',
 	'LBL_UW_PREFLIGHT_DIFF'=>'異なります。 ',
@@ -186,8 +196,10 @@ $mod_strings = array(
 	'LBL_UW_PREFLIGHT_TESTS_PASSED2'=>'Click Next to copy the upgraded files to the system.',
 	'LBL_UW_PREFLIGHT_TESTS_PASSED3'=>'<b>Note: </b> The rest of the upgrade process is mandatory, and clicking Next will require you to complete the process. If you do not wish to proceed, click the Cancel button.',
 	'LBL_UW_PREFLIGHT_TOGGLE_ALL'=>'全ファイルの選択・非選択',
+	
 	'LBL_UW_REBUILD_TITLE'=>'結果の再構築',
 	'LBL_UW_SCHEMA_CHANGE'=>'スキーマの変更',
+	
 	'LBL_UW_SHOW_COMPLIANCE'=>'検出された設定の表示',
 	'LBL_UW_SHOW_DB_PERMS'=>'不足するデータベースパーミッションを表示',
 	'LBL_UW_SHOW_DETAILS'=>'詳細表示',
@@ -196,6 +208,7 @@ $mod_strings = array(
 	'LBL_UW_SHOW_SCHEMA'=>'スキーマを変更するスクリプトの表示',
 	'LBL_UW_SHOW_SQL_ERRORS'=>'不正なクエリの表示',
 	'LBL_UW_SHOW'=>'表示',
+
 	'LBL_UW_SKIPPED_FILES_TITLE'=>'スキップされたファイル',
 	'LBL_UW_SKIPPING_FILE_OVERWRITE'=>'ファイルの上書きをスキップします。手作業でのマージが選択されました。',
 	'LBL_UW_SQL_RUN'=>'SQLが手動で実行された場合をチェック',
@@ -204,10 +217,12 @@ $mod_strings = array(
 	'LBL_UW_START_DESC3'=>'Click Next to perform a check on your system to make sure that the system is ready for the upgrade. The check includes file permissions, database privileges and server settings.',
 	'LBL_UW_START_UPGRADED_UW_DESC'=>'新アップグレードウィザードはアップグレード処理を再開します。アップグレードを継続してください。',
 	'LBL_UW_START_UPGRADED_UW_TITLE'=>'新アップグレードウィザードへようこそ。',
+	
 	'LBL_UW_SYSTEM_CHECK_CHECKING'=>'チェック中です。しばらくお待ちください。この処理は３０秒ほどかかります。',
 	'LBL_UW_SYSTEM_CHECK_FILE_CHECK_START'=>'チェックすべき適切なファイルを検出しています。',
 	'LBL_UW_SYSTEM_CHECK_FILES'=>'ファイル',
 	'LBL_UW_SYSTEM_CHECK_FOUND'=>'検出',
+	
 	'LBL_UW_TITLE_CANCEL'=>'キャンセル',
 	'LBL_UW_TITLE_COMMIT'=>'アップグレードの適用',
 	'LBL_UW_TITLE_END'=>'結果のチェック',
@@ -217,12 +232,15 @@ $mod_strings = array(
 	'LBL_UW_TITLE_UPLOAD'=>'アップグレードファイルのアップロード',
 	'LBL_UW_TITLE'=>'アップグレードウィザード',
 	'LBL_UW_UNINSTALL'=>'アンインストール',
+	//500 upgrade labels
 	'LBL_UW_ACCEPT_THE_LICENSE'=>'ライセンスを受諾',
 	'LBL_UW_CONVERT_THE_LICENSE'=>'ライセンスをコンバート',
 	'LBL_UW_CUSTOMIZED_OR_UPGRADED_MODULES'=>'アップグレード済/カスタマイズ済モジュール',
 	'LBL_UW_FOLLOWING_MODULES_CUSTOMIZED'=>'以下のモジュールはカスタマイズされているので保存されました。',
 	'LBL_UW_FOLLOWING_MODULES_UPGRADED'=>'以下のモジュールはスタジオでカスタマイズされたものなのでアップグレードされました。',
+
 	'LBL_UW_SUGAR_COMMUNITY_EDITION_LICENSE'=>'Sugar Community Edition 5.0は、GNU General Public License Version 3を使用しています。このアップグレードは、既存のライセンスを以下に表示された新しいライセンスに置き換えます。',
+	
 	'LBL_START_UPGRADE_IN_PROGRESS'=>'開始中です',
 	'LBL_SYSTEM_CHECKS_IN_PROGRESS'=>'システムチェック中です',
 	'LBL_LICENSE_CHECK_IN_PROGRESS'=>'ライセンスチェック中です',
@@ -258,6 +276,7 @@ $mod_strings = array(
 	'LBL_ML_UNINSTALLABLE'=>'インストール不可',
 	'LBL_ML_VERSION'=>'バージョン',
 	'LBL_ML_INSTALL'=>'インストール',
+	//adding the string used in tracker. copying from homepage
 	'LBL_HOME_PAGE_4_NAME'=>'トラッカー',
 	'LBL_CURRENT_PHP_VERSION'=>'(Your current php version is ',
 	'LBL_RECOMMENDED_PHP_VERSION'=>'. Recommended php version is 5.2.1 or above)',
@@ -272,4 +291,11 @@ $mod_strings = array(
 	'LBL_UW_CONFIRM_LAYOUT_RESULTS'=>'Confirm Layout Results',
 	'LBL_UW_CONFIRM_LAYOUT_RESULTS_DESC'=>'The following layouts were merged successfully:',
 	'LBL_SELECT_FILE'=>'Select File:',
+	'LBL_LANGPACKS' => 'Language Packs' /*for 508 compliance fix*/,
+	'LBL_MODULELOADER' => 'Module Loader' /*for 508 compliance fix*/,
+	'LBL_PATCHUPGRADES' => 'Patch Upgrades' /*for 508 compliance fix*/,
+	'LBL_THEMES' => 'Themes' /*for 508 compliance fix*/,
+	'LBL_WORKFLOW' => 'Workflow' /*for 508 compliance fix*/,
+	'LBL_UPGRADE' => 'Upgrade' /*for 508 compliance fix*/,
+	'LBL_PROCESSING' => 'Processing' /*for 508 compliance fix*/,
 );

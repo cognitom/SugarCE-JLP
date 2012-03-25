@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -35,5 +36,27 @@
  ********************************************************************************/
 
 $mod_strings = array(
+'LBL_NAME' => 'Job Name',
 	'LBL_EXECUTE_TIME'=>'実行時間',
+'LBL_SCHEDULER_ID' 	=> 'Scheduler',
+'LBL_STATUS' 	=> 'Job Status',
+'LBL_RESOLUTION' 	=> 'Result',
+'LBL_MESSAGE' 	=> 'Messages',
+'LBL_DATA' 	=> 'Job Data',
+'LBL_REQUEUE' 	=> 'Retry on failure',
+'LBL_RETRY_COUNT' 	=> 'Maximum retries',
+'LBL_FAIL_COUNT' 	=> 'Failures',
+'LBL_INTERVAL' 	=> 'Minimum interval between tries',
+'LBL_CLIENT' 	=> 'Owning client',
+'LBL_PERCENT'	=> 'Pecent complete',
+// Errors
+'ERR_CALL' 	=> "Cannot call function: %s",
+'ERR_CURL' => "No CURL - cannot run URL jobs",
+'ERR_FAILED' => "Unexpected failure, please check PHP logs and sugarcrm.log",
+'ERR_PHP' => "%s [%d]: %s in %s on line %d",
+'ERR_NOUSER' => "No User ID specified for the job",
+'ERR_NOSUCHUSER' => "User ID %s not found",
+'ERR_JOBTYPE' 	=> "Unknown job type: %s",
+'ERR_TIMEOUT' => "Forced failure on timeout",
+'ERR_JOB_FAILED_VERBOSE' => 'Job %1$s (%2$s) failed in CRON run',
 );

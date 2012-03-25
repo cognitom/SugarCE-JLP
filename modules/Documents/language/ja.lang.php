@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -32,6 +33,14 @@
  * SugarCRM" logo. If the display of the logo is not reasonably feasible for
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
+ ********************************************************************************/
+
+/*********************************************************************************
+
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
  ********************************************************************************/
 
 $mod_strings = array(
@@ -74,8 +83,12 @@ $mod_strings = array(
 	'LBL_NEW_FORM_TITLE'=>'ドキュメント作成',
 	'LBL_DOC_NAME'=>'ドキュメント名:',
 	'LBL_FILENAME'=>'ファイル名:',
+	'LBL_LIST_FILENAME' => 'File:',
 	'LBL_DOC_VERSION'=>'版数:',
+	'LBL_FILE_UPLOAD' => 'File:',
+
 	'LBL_CATEGORY_VALUE'=>'カテゴリ:',
+	'LBL_LIST_CATEGORY' => 'Category',
 	'LBL_SUBCATEGORY_VALUE'=>'サブカテゴリ:',
 	'LBL_DOC_STATUS'=>'ステータス:',
 	'LBL_LAST_REV_CREATOR'=>'版数作成者:',
@@ -126,8 +139,11 @@ $mod_strings = array(
 	'ERR_DELETE_LATEST_VERSION'=>'最新版を削除することを許可されていません。',
 	'LNK_NEW_MAIL_MERGE'=>'メールマージ',
 	'LBL_MAIL_MERGE_DOCUMENT'=>'メールマージテンプレート:',
+	'ERR_MISSING_FILE' => 'This document is missing a file, most likely due to  an error during upload.  Please retry uploading the file or contact your administrator.',
+
 	'LBL_TREE_TITLE'=>'ドキュメント',
 	'LBL_LIST_DOCUMENT_NAME'=>'ドキュメント名',
+	'LBL_CONTRACT_NAME'=>'Contract Name:',
 	'LBL_LIST_IS_TEMPLATE'=>'テンプレート？',
 	'LBL_LIST_TEMPLATE_TYPE'=>'ドキュメントタイプ',
 	'LBL_LIST_SELECTED_REVISION'=>'選択された版数',
@@ -138,4 +154,21 @@ $mod_strings = array(
 	'LBL_CREATED_USER'=>'作成者',
 	'LBL_THEREVISIONS_SUBPANEL_TITLE'=>'Reversions',
 	'LBL_DOCUMENT_INFORMATION'=>'Document Overview',
+	'LBL_DOC_ID' => 'Document Source ID',
+	'LBL_DOC_TYPE' => 'Source',
+	'LBL_LIST_DOC_TYPE' => 'Source',
+    'LBL_DOC_TYPE_POPUP' => 'Select a source to which this document will be uploaded<br> and from which it will be available.',
+	'LBL_DOC_URL' => 'Document Source URL',
+    'LBL_SEARCH_EXTERNAL_DOCUMENT' => 'File Name',
+    'LBL_EXTERNAL_DOCUMENT_NOTE' => 'The first 20 most recently modified files are displayed in descending order in the list below. Use the Search to find other files.',
+    'LBL_LIST_EXT_DOCUMENT_NAME' => 'File Name',
+
+    // Links around the world
+    'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Accounts',
+    'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
+    'LBL_OPPORTUNITIES_SUBPANEL_TITLE' => 'Opportunities',
+    'LBL_CASES_SUBPANEL_TITLE' => 'Cases',
+    'LBL_BUGS_SUBPANEL_TITLE' => 'Bugs',
+    'LBL_QUOTES_SUBPANEL_TITLE' => 'Quotes',
+	'LBL_PRODUCTS_SUBPANEL_TITLE' => 'Products',
 );

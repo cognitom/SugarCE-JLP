@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -34,14 +35,24 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
+/*********************************************************************************
+
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
+ ********************************************************************************/
+
 $mod_strings = array(
 	'db_name'=>'LBL_LIST_ACCOUNT_NAME',
 	'db_website'=>'LBL_LIST_WEBSITE',
 	'db_billing_address_city'=>'LBL_LIST_CITY',
+    'LBL_DOCUMENTS_SUBPANEL_TITLE' => 'Documents',
 	'LBL_CHARTS'=>'チャート一覧',
 	'LBL_DEFAULT'=>'ビュー一覧',
 	'LBL_MISC'=>'その他',
 	'LBL_UTILS'=>'ユティリティ',
+	
 	'ACCOUNT_REMOVE_PROJECT_CONFIRM'=>'プロジェクトからこの取引先を削除して良いですか？',
 	'ERR_DELETE_RECORD'=>'取引先を削除するためにはレコード番号を指定する必要があります。',
 	'LBL_ACCOUNT_INFORMATION'=>'取引先情報',
@@ -163,4 +174,13 @@ $mod_strings = array(
 	'LBL_PROSPECT_LIST'=>'Prospect List',
 	'LBL_ACCOUNTS_SUBPANEL_TITLE'=>'Accounts',
 	'LBL_PROJECT_SUBPANEL_TITLE'=>'Projects',
+	'LBL_COPY' => 'Copy' /*for 508 compliance fix*/,
+    //For export labels
+    'LBL_ACCOUNT_TYPE' => 'Account Type',
+    'LBL_CAMPAIGN_ID' => 'Campaign ID',
+    'LBL_PARENT_ID' => 'Parent ID',
+    'LBL_PHONE_ALTERNATE' => 'Phone Alternate',
+    'LBL_EXPORT_ASSIGNED_USER_NAME' => 'Assigned User Name',
+    // SNIP
+    'LBL_CONTACT_HISTORY_SUBPANEL_TITLE' => 'Related Contacts\' Emails',
 );

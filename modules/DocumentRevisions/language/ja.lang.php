@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -34,6 +35,14 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
+/*********************************************************************************
+
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
+ ********************************************************************************/
+
 $mod_strings = array(
 	'LBL_MODULE_NAME'=>'ドキュメント版数',
 	'LNK_NEW_DOCUMENT'=>'ドキュメント作成',
@@ -59,9 +68,14 @@ $mod_strings = array(
 	'LBL_REV_LIST_FILENAME'=>'ファイル名',
 	'LBL_CURRENT_DOC_VERSION'=>'最新版数:',
 	'LBL_SEARCH_FORM_TITLE'=>'ドキュメント検索',
+	
+	//error messages
 	'ERR_FILENAME'=>'ファイル名',
 	'ERR_DOC_VERSION'=>'版数',
 	'ERR_DELETE_CONFIRM'=>'この版を削除して良いですか？',
 	'ERR_DELETE_LATEST_VERSION'=>'最新版を削除することを許可されていません。',
 	'LNK_NEW_MAIL_MERGE'=>'メールマージ',
+	'LBL_DOC_ID' => 'Document Source ID',
+	'LBL_DOC_TYPE' => 'Source',
+	'LBL_DOC_URL' => 'Document Source URL',
 );

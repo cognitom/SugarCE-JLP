@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -47,5 +48,7 @@ $mod_strings = array(
 	'LBL_ROLES_SUBPANEL_TITLE'=>'ユーザの役割',
 	'LBL_SEARCH_FORM_TITLE'=>'検索',
 	'LBL_NO_ACCESS'=>'このエリアにアクセスできません。アクセス権を取得するには管理者に連絡してください。',
+	'LBL_REDIRECT_TO_HOME'=>'Redirect to Home in',
+	'LBL_SECONDS'=>'seconds',
 	'LBL_ADDING'=>'以下に追加 ',
 );

@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -33,6 +34,15 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
+
+/*********************************************************************************
+
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
+ ********************************************************************************/
+global $sugar_config;
 
 $mod_strings = array(
 	'LBL_OOTB_WORKFLOW'=>'ワークフロータスクを実行',
@@ -74,12 +84,17 @@ $mod_strings = array(
 	'LBL_MONTH'=>'月',
 	'LBL_OFTEN'=>'できるだけ頻繁に実行',
 	'LBL_MIN_MARK'=>'分',
+
+	// crontabs
 	'LBL_MINS'=>'分',
 	'LBL_HOURS'=>'時',
 	'LBL_DAY_OF_MONTH'=>'日',
 	'LBL_MONTHS'=>'月',
 	'LBL_DAY_OF_WEEK'=>'曜日',
 	'LBL_CRONTAB_EXAMPLES'=>'上記は標準のcrontab表記を用いています。',
+	'LBL_CRONTAB_SERVER_TIME_PRE' =>  'The cron specifications run based on the server timezone (',
+	'LBL_CRONTAB_SERVER_TIME_POST' => '). Please specify the scheduler execution time accordingly.',
+	// Labels
 	'LBL_ALWAYS'=>'常に',
 	'LBL_CATCH_UP'=>'実行していなければ実行: ',
 	'LBL_CATCH_UP_WARNING'=>'このジョブの実行に時間がかかる場合はチェックをはずしてください。',
@@ -106,14 +121,12 @@ $mod_strings = array(
 	'LBL_ADV_OPTIONS'=>'拡張オプション',
 	'LBL_TOGGLE_ADV'=>'拡張オプション',
 	'LBL_TOGGLE_BASIC'=>'基本オプション',
+	// Links
 	'LNK_LIST_SCHEDULER'=>'スケジューラー',
 	'LNK_NEW_SCHEDULER'=>'スケジューラー作成',
 	'LNK_LIST_SCHEDULED'=>'スケジュール済みジョブ',
-	'SOCK_GREETING'=>'
-これはSugarCRMスケジューラーのインターフェースです。
-[ 使用可能なデーモンコマンド: start|restart|shutdown|status ]
-終了するには「quit」を、サービスをシャットダウンするには「shutdown」を入力してください。
-',
+	// Messages
+	'SOCK_GREETING'=>"\nこれはSugarCRMスケジューラーのインターフェースです。\n[ 使用可能なデーモンコマンド: start|restart|shutdown|status ]\n終了するには「quit」を、サービスをシャットダウンするには「shutdown」を入力してください。",
 	'ERR_DELETE_RECORD'=>'スケジュールを削除する場合はレコード番号を指定してください。',
 	'ERR_CRON_SYNTAX'=>'不正なcron文法',
 	'NTC_DELETE_CONFIRMATION'=>'本当にこのレコードを削除してよいですか？',
@@ -124,12 +137,18 @@ $mod_strings = array(
 	'LBL_CRON_LINUX_DESC'=>'以下を参考にcron.phpを実行する行をcrontabに追加：',
 	'LBL_CRON_WINDOWS_DESC'=>'以下の例を参考にcron.phpを実行するバッチファイルを作って下さい： ',
 	'LBL_NO_PHP_CLI'=>'ホスト環境でPHPバイナリが使用できない場合、wgetかcurlを利用してジョブを実行させることができます。<br>wget用: <b>*&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;wget --quiet --non-verbose /cron.php > /dev/null 2>&1</b><br>curl用: <b>*&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;curl --silent /cron.php > /dev/null 2>&1',
+	// Subpanels
 	'LBL_JOBS_SUBPANEL_TITLE'=>'アクティブなジョブ',
 	'LBL_EXECUTE_TIME'=>'実行時間',
+	
+	//jobstrings
 	'LBL_REFRESHJOBS'=>'Refresh Jobs',
 	'LBL_POLLMONITOREDINBOXES'=>'Check Inbound Mail Accounts',
+'LBL_PERFORMFULLFTSINDEX' => 'Full-text Search Index System',
+
 	'LBL_RUNMASSEMAILCAMPAIGN'=>'Run Nightly Mass Email Campaigns',
 	'LBL_POLLMONITOREDINBOXESFORBOUNCEDCAMPAIGNEMAILS'=>'Run Nightly Process Bounced Campaign Emails',
 	'LBL_PRUNEDATABASE'=>'Prune Database on 1st of Month',
 	'LBL_TRIMTRACKER'=>'Prune Tracker Tables',
+'LBL_SENDEMAILREMINDERS'=> 'Run Email Reminders Sending',
 );

@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -34,6 +35,11 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
+
+
+
+
+
 $mod_strings = array(
 	'LBL_EDIT_LAYOUT'=>'レイアウト編集',
 	'LBL_EDIT_ROWS'=>'行の編集',
@@ -59,6 +65,7 @@ $mod_strings = array(
 	'LBL_PUBLISHED'=>'公開済み',
 	'LBL_FAILED_PUBLISHED'=>'公開に失敗しました。',
 	'LBL_DROP_HERE'=>'[ここにドロップ]',
+	
 	'LBL_NAME'=>'名前',
 	'LBL_LABEL'=>'ラベル',
 	'LBL_MASS_UPDATE'=>'一括更新',
@@ -67,7 +74,9 @@ $mod_strings = array(
 	'LBL_DEFAULT_VALUE'=>'デフォルト値',
 	'LBL_REQUIRED'=>'必須',
 	'LBL_DATA_TYPE'=>'タイプ',
+	
 	'LBL_HISTORY'=>'履歴',
+	
 	'LBL_SW_WELCOME'=>'<h2>スタジオへようこそ！</h2><br> 今日はどの作業を行いますか？<br><b>以下からオプションを選択して下さい。',
 	'LBL_SW_EDIT_MODULE'=>'モジュールの編集',
 	'LBL_SW_EDIT_DROPDOWNS'=>'ドロップダウンの編集',
@@ -78,29 +87,42 @@ $mod_strings = array(
 	'LBL_SW_EDIT_WORKFLOW'=>'ワークフローの編集',
 	'LBL_SW_REPAIR_CUSTOMFIELDS'=>'カスタムフィールド修復',
 	'LBL_SW_MIGRATE_CUSTOMFIELDS'=>'カスタムフィールドのマイグレート',
+	
 	'LBL_SMW_WELCOME'=>'<h2>スタジオへようこそ！</h2><br><b>以下からモジュールを選択して下さい。</b>',
+	
 	'LBL_SMA_WELCOME'=>'<h2>モジュールを編集</h2>どのような作業を行いますか？<br><b>行いたい作業を選択して下さい。</b>',
 	'LBL_SMA_EDIT_CUSTOMFIELDS'=>'フィールドの編集',
 	'LBL_SMA_EDIT_LAYOUT'=>'レイアウト編集',
 	'LBL_SMA_EDIT_LABELS'=>'ラベル編集',
+	
 	'LBL_MB_PREVIEW'=>'プレビュー',
 	'LBL_MB_RESTORE'=>'リストア',
 	'LBL_MB_DELETE'=>'削除',
 	'LBL_MB_COMPARE'=>'比較',
 	'LBL_MB_WELCOME'=>'<h2>履歴</h2><br> 現在作業中のファイルについて、過去に公開された版を表示できます。リストアすると、それが現在のファイルに置き換わります。編集したファイルを全ユーザに表示するには、必ず公開する必要があります。<br>今日はどの作業を行いますか？<br><b> 以下から選択して下さい。</b>',
+	
+	//EDIT DROP DOWNS
 	'LBL_ED_CREATE_DROPDOWN'=>'ドロップダウンの作成',
 	'LBL_ED_WELCOME'=>'<h2>ドロップダウンの編集</h2><br><b>登録されているドロップダウン編集、またはドロップダウンの新規作成を行うことができます。</b>',
 	'LBL_DROPDOWN_NAME'=>'ドロップダウン名:',
 	'LBL_DROPDOWN_LANGUAGE'=>'ドロップダウン言語:',
 	'LBL_TABGROUP_LANGUAGE'=>'タブグループ言語:',
+	
+	//EDIT CUSTOM FIELDS
 	'LBL_EC_WELCOME'=>'<h2>カスタムフィールドの編集</h2><br><b>カスタムフィールドの表示、編集、新規作成、キャッシュのクリア、修復を行うことができます。</b>',
 	'LBL_EC_VIEW_CUSTOMFIELDS'=>'カスタムフィールドの表示',
 	'LBL_EC_CREATE_CUSTOMFIELD'=>'カスタムフィールドの作成',
 	'LBL_EC_CLEAR_CACHE'=>'キャッシュのクリア',
+	
+	//SELECT MODULE
 	'LBL_SM_WELCOME'=>'<h2>履歴</h2><br><b>参照したいファイルを選択してください。</b>',
+	
+	//DROP DOWN EDITOR
 	'LBL_DD_DISPALYVALUE'=>'表示する値',
 	'LBL_DD_DATABASEVALUE'=>'データベースの値',
 	'LBL_DD_ALL'=>'すべての',
+	
+	//BUTTONS
 	'LBL_BTN_SAVE'=>'保存',
 	'LBL_BTN_SAVEPUBLISH'=>'保存＆展開',
 	'LBL_BTN_HISTORY'=>'履歴',
@@ -112,10 +134,14 @@ $mod_strings = array(
 	'LBL_BTN_REDO'=>'繰り返す',
 	'LBL_BTN_ADDCUSTOMFIELD'=>'カスタムフィールド追加',
 	'LBL_BTN_TABINDEX'=>'tabindexの編集',
+	
+	//TABS
 	'LBL_TAB_SUBTABS'=>'サブタブ',
 	'LBL_MODULES'=>'モジュール',
+	//nsingh: begin bug#15095 fix
 	'LBL_MODULE_NAME'=>'管理',
 	'LBL_CONFIGURE_GROUP_TABS'=>'タブグループの設定',
+	//end bug #15095 fix
 	'LBL_GROUP_TAB_WELCOME'=>'以下のグループタブのレイアウトはユーザがグループタブの利用を選択した場合に、マイアカウント>レイアウトオプションで通常のモジュールタブの代わりに利用されます。',
 	'LBL_RENAME_TAB_WELCOME'=>'下記テーブル内の任意のタブの表示名をクリックし、タブの名前を変更してください。',
 	'LBL_DELETE_MODULE'=>'グループから<br />モジュールを削除',
@@ -125,13 +151,19 @@ $mod_strings = array(
 	'LBL_NEW_GROUP'=>'新規グループ',
 	'LBL_RENAME_TABS'=>'タブの名前を変更',
 	'LBL_DISPLAY_OTHER_TAB'=>'\'その他\'タブの表示',
+	
+	//LIST VIEW EDITOR
 	'LBL_DEFAULT'=>'デフォルト',
 	'LBL_ADDITIONAL'=>'追加',
 	'LBL_AVAILABLE'=>'有効',
 	'LBL_LISTVIEW_DESCRIPTION'=>'下記に3つのカラムが表示されています。デフォルトカラムには、デフォルトでリストビューに表示されるカラムが含まれています。追加カラムには、カスタムビューを作成するときに選択できるカラムが表示されています。有効カラムには、管理者がデフォルトカラムか追加カラムに含めることが出来るカラムが表示されています。',
 	'LBL_LISTVIEW_EDIT'=>'リストビューエディタ',
+	
+	//ERRORS
 	'ERROR_ALREADY_EXISTS'=>'エラー: フィールドが既に存在します',
 	'ERROR_INVALID_KEY_VALUE'=>'エラー: 不正なキーの値: [\']',
+	
+	//SUGAR PORTAL
 	'LBL_SW_SUGARPORTAL'=>'Sugarポータル',
 	'LBL_SMP_WELCOME'=>' 以下から編集したいモジュールを選択してください',
 	'LBL_SP_WELCOME'=>'Sugarポータル用スタジオへようこそ。ここでモジュールを編集するか、ポータルインスタンスを同意するかを選ぶことができます。以下から選択してください。',
@@ -143,4 +175,22 @@ $mod_strings = array(
 	'LBL_SP_UPLOADED'=>'アップロードしました',
 	'ERROR_SP_UPLOADED'=>'CSS スタイルシートがアップロードされてていることを確認してください。',
 	'LBL_SP_PREVIEW'=>'これがスタイルシートを適用後のプレビューです。',
+	
+	'LBL_SAVE' => 'Save' /*for 508 compliance fix*/,
+	'LBL_UNDO' => 'Undo' /*for 508 compliance fix*/,
+	'LBL_REDO' => 'Redo' /*for 508 compliance fix*/,
+	'LBL_INLINE' => 'Inline' /*for 508 compliance fix*/,
+	'LBL_DELETE' => 'Delete' /*for 508 compliance fix*/,
+	'LBL_ADD_FIELD' => 'Add Field' /*for 508 compliance fix*/,
+	'LBL_MAXIMIZE' => 'Maximize' /*for 508 compliance fix*/,
+	'LBL_MINIMIZE' => 'Minimize' /*for 508 compliance fix*/,
+	'LBL_PUBLISH' => 'Publish' /*for 508 compliance fix*/,
+	'LBL_ADDROWS' => 'Add Rows' /*for 508 compliance fix*/,
+	'LBL_ADDFIELD' => 'Add Field' /*for 508 compliance fix*/,
+	'LBL_EDIT' => 'Edit' /*for 508 compliance fix*/,
+
+	'LBL_LANGUAGE_TOOLTIP' => 'Select the language to edit.',
+	'LBL_SINGULAR' => 'Singular Label',
+	'LBL_PLURAL' => 'Plural Label',
+	'LBL_RENAME_MOD_SAVE_HELP' => 'Click <b>Save</b> to apply the changes.'
 );

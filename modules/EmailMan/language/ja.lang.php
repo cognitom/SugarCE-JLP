@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -32,6 +33,14 @@
  * SugarCRM" logo. If the display of the logo is not reasonably feasible for
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
+ ********************************************************************************/
+
+/*********************************************************************************
+
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
  ********************************************************************************/
 
 $mod_strings = array(
@@ -114,6 +123,7 @@ $mod_strings = array(
 	'TXT_REMOVE_ME_CLICK'=>'ここをクリック',
 	'TXT_REMOVE_ME'=>'この電子メールリストからあなた自身を除外するには',
 	'LBL_NOTIFY_SEND_FROM_ASSIGNING_USER'=>'アサインしたユーザのメールアドレスで送信',
+	
 	'LBL_SECURITY_TITLE'=>'電子メールのセキュリティ設定',
 	'LBL_SECURITY_DESC'=>'以下のタグのうち、メール表示時に無効にするものをチェックしてください。',
 	'LBL_SECURITY_APPLET'=>'Appletタグ',
@@ -140,4 +150,8 @@ $mod_strings = array(
 	'LBL_ALLOW_DEFAULT_SELECTION'=>'Allow users to use this account for outgoing email:',
 	'LBL_ALLOW_DEFAULT_SELECTION_HELP'=>'When this option selected, all users will be able to send emails using the same outgoing<br> mail account used to send system notifications and alerts.  If the option is not selected,<br> users can still use the outgoing mail server after providing their own account information.',
 	'LBL_FROM_ADDRESS_HELP'=>'When enabled, the assigning user\\\'s name and email address will be included in the From field of the email. This feature might not work with SMTP servers that do not allow sending from a different email account than the server account.',
+	'LBL_GMAIL_LOGO' => 'Gmail' /*for 508 compliance fix*/,
+	'LBL_YAHOO_MAIL_LOGO' => 'Yahoo Mail' /*for 508 compliance fix*/,
+	'LBL_EXCHANGE_LOGO' => 'Exchange' /*for 508 compliance fix*/,
+	'LBL_HELP' => 'Help' /*for 508 compliance fix*/,
 );

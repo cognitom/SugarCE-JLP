@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -34,6 +35,14 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
+/*********************************************************************************
+
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
+ ********************************************************************************/
+
 $mod_strings = array(
 	'LBL_REPLY_ADDR'=>'返信先(\"Reply-To\")のアドレス:',
 	'LBL_REPLY_NAME'=>'返信先(\"Reply-To\")の名前:',
@@ -55,16 +64,19 @@ $mod_strings = array(
 	'LBL_CREATED'=>'作成者: ',
 	'LBL_MESSAGE_FOR'=>'メッセージ宛先:',
 	'LBL_MESSAGE_FOR_ID'=>'メッセージ: ',
+	
 	'LBL_FROM_NAME'=>'From（名）: ',
 	'LBL_FROM_ADDR'=>'From（アドレス）: ',
 	'LBL_DATE_START'=>'実施日',
 	'LBL_TIME_START'=>'開始時間',
 	'LBL_START_DATE_TIME'=>'開始日時: ',
 	'LBL_TEMPLATE'=>'電子メールテンプレート: ',
+	
 	'LBL_MODIFIED_BY'=>'更新者: ',
 	'LBL_CREATED_BY'=>'作成者: ',
 	'LBL_DATE_CREATED'=>'作成日: ',
 	'LBL_DATE_LAST_MODIFIED'=>'最終更新日: ',
+	
 	'LNK_NEW_CAMPAIGN'=>'キャンペーン作成',
 	'LNK_CAMPAIGN_LIST'=>'キャンペーン',
 	'LNK_NEW_PROSPECT_LIST'=>'ターゲットリスト作成',

@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -34,6 +35,14 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
+/*********************************************************************************
+
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
+ ********************************************************************************/
+ 
 $mod_strings = array(
 	'LBL_MODULE_NAME'=>'商談',
 	'LBL_MODULE_TITLE'=>'商談: ホーム',
@@ -50,10 +59,12 @@ $mod_strings = array(
 	'LBL_LIST_SALE_STAGE'=>'商談ステージ',
 	'LBL_ACCOUNT_ID'=>'取引先ID',
 	'LBL_CURRENCY_ID'=>'通貨ID',
+	//DON'T CONVERT THESE THEY ARE MAPPINGS
 	'db_sales_stage'=>'LBL_LIST_SALES_STAGE',
 	'db_name'=>'LBL_NAME',
 	'db_amount'=>'LBL_LIST_AMOUNT',
 	'db_date_closed'=>'LBL_LIST_DATE_CLOSED',
+	//END DON'T CONVERT
 	'UPDATE'=>'商談の通貨更新',
 	'UPDATE_DOLLARAMOUNTS'=>'USドルの金額を更新',
 	'UPDATE_VERIFY'=>'金額を検証',
@@ -117,6 +128,7 @@ $mod_strings = array(
 	'LBL_MODIFIED_ID'=>'更新者ID',
 	'LBL_MODIFIED_NAME'=>'更新者',
 	'LBL_SALE_INFORMATION'=>'商談情報',
+	'LBL_CURRENCY_ID'=>'Currency ID',
 	'LBL_CURRENCY_NAME'=>'Currency Name',
 	'LBL_CURRENCY_SYMBOL'=>'Currency Symbol',
 );

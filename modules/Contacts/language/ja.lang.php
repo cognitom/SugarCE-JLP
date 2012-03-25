@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -33,6 +34,14 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
+
+/*********************************************************************************
+
+* Description:  Defines the English language pack for the base application.
+* Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+* All Rights Reserved.
+* Contributor(s): ______________________________________..
+********************************************************************************/
 
 $mod_strings = array(
 	'db_last_name'=>'LBL_LIST_LAST_NAME',
@@ -187,10 +196,13 @@ $mod_strings = array(
 	'LBL_USER_PASSWORD'=>'パスワード:',
 	'LBL_LEADS_SUBPANEL_TITLE'=>'リード',
 	'LBL_OPPORTUNITIES_SUBPANEL_TITLE'=>'商談',
+	'LBL_DOCUMENTS_SUBPANEL_TITLE' => 'Documents',
+	'LBL_COPY_ADDRESS_CHECKED_PRIMARY' => 'Copy to Primary Address',
 	'LBL_COPY_ADDRESS_CHECKED'=>'住所をチェックした取引先担当者にコピー',
 	'LBL_CASES_SUBPANEL_TITLE'=>'ケース',
 	'LBL_BUGS_SUBPANEL_TITLE'=>'バグトラッカー',
 	'LBL_PROJECTS_SUBPANEL_TITLE'=>'プロジェクト',
+    'LBL_PROJECTS_RESOURCES' => 'Projects Resources',
 	'LBL_TARGET_OF_CAMPAIGNS'=>'キャンペーン一覧（ターゲット先）:',
 	'LBL_CAMPAIGNS'=>'キャンペーン',
 	'LBL_CAMPAIGN_LIST_SUBPANEL_TITLE'=>'キャンペーン',
@@ -203,4 +215,22 @@ $mod_strings = array(
 	'LBL_PROJECT_SUBPANEL_TITLE'=>'Projects',
 	'LBL_CAMPAIGNS_SUBPANEL_TITLE'=>'Campaigns',
 	'LNK_IMPORT_CONTACTS'=>'Import Contacts',
+
+    //For export labels
+    'LBL_PHONE_HOME' => 'Phone Home',
+    'LBL_PHONE_MOBILE' => 'Phone Mobile',
+    'LBL_PHONE_WORK' => 'Phone Work',
+    'LBL_PHONE_OTHER' => 'Phone Other',
+    'LBL_PHONE_FAX' => 'Phone Fax',
+    'LBL_CAMPAIGN_ID' => 'Campaign ID',
+
+    'LBL_EXPORT_ASSIGNED_USER_NAME' => 'Assigned User Name',
+    'LBL_EXPORT_ASSIGNED_USER_ID' => 'Assigned User ID',
+    'LBL_EXPORT_MODIFIED_USER_ID' => 'Modified By ID',
+    'LBL_EXPORT_CREATED_BY' => 'Created By ID',
+    'LBL_EXPORT_PHONE_HOME' => 'Home Phone',
+    'LBL_EXPORT_PHONE_MOBILE' => 'Mobile Phone',
+    // SNIP
+    'LBL_CONTACT_HISTORY_SUBPANEL_TITLE' => 'Related Contacts\' Emails',
+    'LBL_USER_SYNC' => 'User Sync'
 );

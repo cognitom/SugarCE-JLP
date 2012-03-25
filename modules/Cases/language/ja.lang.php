@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -34,8 +35,17 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
+/*********************************************************************************
+
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
+ ********************************************************************************/
+
 $mod_strings = array(
 	'ERR_DELETE_RECORD'=>'取引先を削除するためにはレコード番号を指定する必要があります。',
+	
 	'LBL_ACCOUNT_ID'=>'取引先ID',
 	'LBL_ACCOUNT_NAME'=>'取引先:',
 	'LBL_ACCOUNTS_SUBPANEL_TITLE'=>'取引先',
@@ -61,6 +71,7 @@ $mod_strings = array(
 	'LBL_NUMBER'=>'番号:',
 	'LBL_PRIORITY'=>'優先度:',
 	'LBL_PROJECTS_SUBPANEL_TITLE'=>'プロジェクト',
+	'LBL_DOCUMENTS_SUBPANEL_TITLE' 		=> 'Documents',
 	'LBL_RESOLUTION'=>'解決:',
 	'LBL_SEARCH_FORM_TITLE'=>'ケース検索',
 	'LBL_STATUS'=>'ステータス:',
@@ -77,6 +88,8 @@ $mod_strings = array(
 	'LBL_LIST_PRIORITY'=>'優先度',
 	'LBL_LIST_STATUS'=>'ステータス',
 	'LBL_LIST_SUBJECT'=>'件名',
+	'LBL_LIST_ASSIGNED_TO_NAME'   		=> 'Assigned User',
+	
 	'LNK_CASE_LIST'=>'ケース',
 	'LNK_NEW_CASE'=>'ケース作成',
 	'NTC_REMOVE_FROM_BUG_CONFIRMATION'=>'このケースをバグから削除しても良いですか？',
@@ -90,4 +103,31 @@ $mod_strings = array(
 	'LBL_MODIFIED_USER'=>'更新者',
 	'LBL_PROJECT_SUBPANEL_TITLE'=>'Projects',
 	'LBL_CASE_INFORMATION'=>'Case Overview',
+
+    //For export labels
+    'LBL_MODIFIED_BY_NAME_OWNER' => 'Modified By Name Owner',
+    'LBL_MODIFIED_BY_NAME_MOD' => 'Modified By Name Mod',
+    'LBL_CREATED_BY_NAME_OWNER' => 'Created By Name Owner',
+    'LBL_CREATED_BY_NAME_MOD' => 'Created By Name Mod',
+    'LBL_ASSIGNED_USER_NAME_OWNER' => 'Assigned User Name Owner',
+    'LBL_ASSIGNED_USER_NAME_MOD' => 'Assigned User Name Mod',
+    'LBL_TEAM_COUNT_OWNER' => 'Team Count Owner',
+    'LBL_TEAM_COUNT_MOD' => 'Team Count Mod',
+    'LBL_TEAM_NAME_OWNER' => 'Team Name Owner',
+    'LBL_TEAM_NAME_MOD' => 'Team Name Mod',
+    'LBL_ACCOUNT_NAME_OWNER' => 'Account Name Owner',
+    'LBL_ACCOUNT_NAME_MOD' => 'Account Name Mod',
+    'LBL_MODIFIED_USER_NAME' => 'Modified User Name',
+    'LBL_MODIFIED_USER_NAME_OWNER' => 'Modified User Name Owner',
+    'LBL_MODIFIED_USER_NAME_MOD' => 'Modified User Name Mod',
+    'LBL_PORTAL_VIEWABLE' => 'Portal Viewable',
+    'LBL_EXPORT_ASSIGNED_USER_ID' => 'Assigned User ID',
+    'LBL_EXPORT_MODIFIED_USER_ID' => 'Modified By ID',
+    'LBL_EXPORT_CREATED_BY' => 'Created By ID',
+    'LBL_EXPORT_CREATED_BY_NAME' => 'Created By User Name',
+    'LBL_EXPORT_ASSIGNED_USER_NAME' => 'Assigned User Name',
+    'LBL_EXPORT_TEAM_COUNT' => 'Team Count',
+
+    // SNIP
+	'LBL_CONTACT_HISTORY_SUBPANEL_TITLE' => 'Related Contacts\' Emails',
 );

@@ -2,7 +2,8 @@
 $manifest = array( 
 	'acceptable_sugar_versions' => array (
 		'regex_matches' => array (
-			"6\.1\.0*",
+			"6\.5\.*",
+			"6\.4\.*",
 		),
 	),
 	'acceptable_sugar_flavors' => array (
@@ -12,8 +13,8 @@ $manifest = array(
 	'description' => 'SugarCE Japanese Language Pack (lang-file-only)',
 	'type' => 'langpack',
 	'is_uninstallable' => true,
-	'version' => '6.1',
-	'published_date' => '2010-11-24 1:00:00',
+	'version' => '6.5',
+	'published_date' => '2012-03-25 17:00:00',
 	'author' => 'SugarForum.jp',
 );
 

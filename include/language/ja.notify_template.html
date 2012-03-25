@@ -1,7 +1,7 @@
 <!--
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -33,6 +33,7 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
+
 /*********************************************************************************
 
  ********************************************************************************/
@@ -106,14 +107,16 @@ You may review this Task at:
 SugarCRM Meeting - {MEETING_SUBJECT}
 <!-- END: Meeting_Subject -->
 <!-- BEGIN: Meeting -->
-To: {MEETING_TO},
+To: {MEETING_TO}
 
 {ASSIGNER} has invited you to a Meeting
 
 Subject: {MEETING_SUBJECT}
-Status: {MEETING_STATUS}
 Start Date: {MEETING_STARTDATE}
-Duration: {MEETING_HOURS}h, {MEETING_MINUTES}m
+End Date: {MEETING_ENDDATE}
+<!-- BEGIN: Meeting_External_API -->
+Meeting URL: {MEETING_URL}
+<!-- END: Meeting_External_API -->
 Description: {MEETING_DESCRIPTION}
 
 Accept this meeting:
@@ -136,7 +139,7 @@ SugarCRM Meeting - {MEETING_SUBJECT}
 Subject: {MEETING_SUBJECT}
 Status: {MEETING_STATUS}
 Start Date: {MEETING_STARTDATE}
-Duration: {MEETING_HOURS}h, {MEETING_MINUTES}m
+End Date: {MEETING_ENDDATE}
 Description: {MEETING_DESCRIPTION}
 
 You may review this Meeting at:
@@ -244,7 +247,7 @@ You may review this {OBJECT} at:
 SugarCRM Call - {CALL_SUBJECT}
 <!-- END: Call_Subject -->
 <!-- BEGIN: Call -->
-To: {CALL_TO},
+To: {CALL_TO}
  {ASSIGNER} has invited you to a Call
 Subject: {CALL_SUBJECT}
 Status: {CALL_STATUS}
@@ -346,3 +349,24 @@ Your Contract: {CONTRACT_NAME} will be out of date at {CONTRACT_END_DATE}.
 You may review this Contract at:
 <{URL}>
 <!-- END:ContractSpecial-->
+
+<!-- BEGIN: MeetingReminder_Subject -->
+Meeting Reminder - {MEETING_SUBJECT}
+<!-- END: MeetingSpecial_Subject -->
+<!-- BEGIN: MeetingReminder -->
+Title: {MEETING_SUBJECT}
+When: {MEETING_STARTDATE}
+Location: {MEETING_LOCATION}
+Created By: {MEETING_CREATED_BY}
+Description: {MEETING_DESCRIPTION}
+<!-- END: MeetingReminder -->
+
+<!-- BEGIN: CallReminder_Subject -->
+Call Reminder - {CALL_SUBJECT}
+<!-- END: CallReminder_Subject -->
+<!-- BEGIN: CallReminder -->
+Title: {CALL_SUBJECT}
+When: {CALL_STARTDATE}
+Created By: {CALL_CREATED_BY}
+Description: {CALL_DESCRIPTION}
+<!-- END: CallReminder -->

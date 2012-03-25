@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -34,6 +35,14 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
+/*********************************************************************************
+
+ * Description: Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
+ ********************************************************************************/
+
 $mod_strings = array(
 	'LBL_ADD_ANOTHER_FILE'=>'別のファイルを追加',
 	'LBL_ADD_DOCUMENT'=>'Sugarドキュメントの追加',
@@ -46,6 +55,7 @@ $mod_strings = array(
 	'LBL_DESCRIPTION'=>'詳細:',
 	'LBL_EDIT_ALT_TEXT'=>'代替テキストの編集',
 	'LBL_EMAIL_ATTACHMENT'=>'電子メール添付',
+	'LBL_HIDE_ALT_TEXT'			=> 'Hide Plain Text',
 	'LBL_HTML_BODY'=>'HTMLボディ',
 	'LBL_INSERT_VARIABLE'=>'変数の挿入:',
 	'LBL_INSERT_URL_REF'=>'URLリファレンスを挿入',
@@ -81,6 +91,7 @@ $mod_strings = array(
 	'LNK_NEW_SEND_EMAIL'=>'電子メール作成',
 	'LNK_SENT_EMAIL_LIST'=>'送信済み電子メール',
 	'LNK_VIEW_CALENDAR'=>'今日',
+	// for Inbox
 	'LBL_NEW'=>'新規',
 	'LNK_CHECK_MY_INBOX'=>'私のメールをチェック',
 	'LNK_GROUP_INBOX'=>'グループ受信箱',
@@ -100,4 +111,8 @@ $mod_strings = array(
 	'LBL_ACTIVITIES_REPORTS'=>'Activities Report',
 	'LNK_VIEW_MY_INBOX'=>'View My Email',
 	'LBL_ASSIGNED_TO_ID'=>'Assigned To',
+	'LBL_EDIT_LAYOUT' => 'Edit Layout' /*for 508 compliance fix*/,
+	'LBL_SELECT' => 'Select' /*for 508 compliance fix*/,
+	'LBL_ID_FF_CLEAR' => 'Clear' /*for 508 compliance fix*/,
+    'LBL_TYPE' => 'Type',
 );

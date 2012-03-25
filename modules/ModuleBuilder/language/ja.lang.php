@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -35,6 +36,11 @@
  ********************************************************************************/
 
 $mod_strings = array(
+	'LBL_DEPENDANT' => 'Dependant' /*for 508 compliance fix*/,
+	'LBL_LOADING' => 'Loading' /*for 508 compliance fix*/,
+	'LBL_HIDEOPTIONS' => 'Hide Options' /*for 508 compliance fix*/,
+	'LBL_DELETE' => 'Delete' /*for 508 compliance fix*/,
+	'LBL_POWERED_BY_SUGAR' => 'Powered By SugarCRM' /*for 508 compliance fix*/,
 	'help'=>array(
 		'package'=>array(
 			'create'=>'パッケージの<b>パッケージ名</b>となります。パッケージ名では空白を<b>含まない</b>アルファベットのみが利用可能です（例：HR_Management）。<br/><br/><b>作成者</b>と<b>詳細</b>をパッケージに与えることができます。<br/><br/>パッケージを保存するには<b>保存</b>をクリックします。',
@@ -273,10 +279,15 @@ $mod_strings = array(
 			'exportBtn'=>'<b>カスタマイズのエクスポート</b>をクリックするとスタジオで実施されたカスタマイズを含むパッケージを作成します。',
 		),
 	),
+	//HOME
 	'LBL_HOME_EDIT_DROPDOWNS'=>'ドロップダウンの編集',
+	
+	//ASSISTANT
 	'LBL_AS_SHOW'=>'次からもアシスタントを表示',
 	'LBL_AS_IGNORE'=>'次からはアシスタントを無視',
 	'LBL_AS_SAYS'=>'アシスタントのコメント:',
+	
+	//STUDIO2
 	'LBL_MODULEBUILDER'=>'モジュールビルダー',
 	'LBL_STUDIO'=>'スタジオ',
 	'LBL_DROPDOWNEDITOR'=>'ドロップダウンの編集',
@@ -297,6 +308,7 @@ $mod_strings = array(
 	'LBL_BASIC_SEARCH'=>'基本検索',
 	'LBL_CURRENT_LAYOUT'=>'現在のレイアウト',
 	'LBL_CURRENCY'=>'通貨',
+'LBL_CUSTOM' => 'Custom',
 	'LBL_DASHLET'=>'ダッシュレット',
 	'LBL_DASHLETLISTVIEW'=>'ダッシュレット一覧ビュー',
 	'LBL_DASHLETSEARCH'=>'Sugarダッシュレット検索',
@@ -360,6 +372,12 @@ $mod_strings = array(
 	'LBL_DROPDOWN_ITEMS'=>'ドロップダウン項目',
 	'LBL_DROPDOWN_ITEM_NAME'=>'アイテム名',
 	'LBL_DROPDOWN_ITEM_LABEL'=>'表示ラベル',
+'LBL_SYNC_TO_DETAILVIEW' => 'Sync to DetailView',
+'LBL_SYNC_TO_DETAILVIEW_HELP' => 'Select this option to sync this EditView layout to the corresponding DetailView layout. Fields and field placement in the EditView<br>will be sync\'d and saved to the DetailView automatically upon clicking Save or Save & Deploy in the EditView. <br>Layout changes will not be able to be made in the DetailView.',
+'LBL_SYNC_TO_DETAILVIEW_NOTICE' => 'This DetailView is sync\'d with the corresponding EditView.<br> Fields and field placement in this DetailView reflect the fields and field placement in the EditView.<br> Changes to the DetailView cannot be saved or deployed within this page. Make changes or un-sync the layouts in the EditView. ',
+'LBL_COPY_FROM_EDITVIEW' => 'Copy from EditView',
+'LBL_DROPDOWN_BLANK_WARNING' => 'Values are required for both the Item Name and the Display Label. To add a blank item, click Add without entering any values for the Item Name and the Display Label.',
+	
 	'LBL_MODULE'=>'モジュール',
 	'LBL_LHS_MODULE'=>'主モジュール',
 	'LBL_CUSTOM_RELATIONSHIPS'=>'* スタジオもしくはモジュールビルダーで作成された関連',
@@ -459,6 +477,9 @@ $mod_strings = array(
 	'LBL_BTN_VIEW_FIELDS'=>'フィールドの表示',
 	'LBL_BTN_VIEW_RELATIONSHIPS'=>'関連の表示',
 	'LBL_BTN_ADD_RELATIONSHIP'=>'関連の追加',
+'LBL_BTN_RENAME_MODULE' => 'Change Module Name',
+'LBL_BTN_INSERT'=>'Insert',
+
 	'ERROR_ALREADY_EXISTS'=>'エラー: フィールドが既に存在します',
 	'ERROR_INVALID_KEY_VALUE'=>'エラー: キーの値が無効です: [\']',
 	'ERROR_NO_HISTORY'=>'履歴ファイルがみつかりません',
@@ -494,6 +515,7 @@ $mod_strings = array(
 	'LBL_HISTORY'=>'履歴',
 	'LBL_RESTORE_DEFAULT'=>'Restore Default',
 	'LBL_ACTIVITIES'=>'活動',
+'LBL_SEARCH'=>'Search',
 	'LBL_NEW'=>'新規',
 	'LBL_TYPE_BASIC'=>'ベーシック',
 	'LBL_TYPE_COMPANY'=>'会社情報',
@@ -548,6 +570,7 @@ $mod_strings = array(
 	'LBL_POPHELP_IMAGE_WIDTH'=>'Enter a number for Width, as measured in pixels.<br> The uploaded image will be scaled to this Width.',
 	'LBL_POPHELP_IMAGE_HEIGHT'=>'Enter a number for the Height, as measured in pixels.<br> The uploaded image will be scaled to this Height.',
 	'LBL_POPHELP_DUPLICATE_MERGE'=>'<b>可</b>: フィールドは重複をマージ機能の際に表示されますが、重複を検索機能のフィルター条件には使えません。<br><b>不可</b>: フィールドは重複をマージ機能には表示されず、重複を検索機能のフィルター条件には使えません。',
+'LBL_POPHELP_GLOBAL_SEARCH'=>'Select to use this field when searching for records using the Global Search on this module.',
 	'LBL_RESET'=>'Reset',
 	'LBL_RESET_MODULE'=>'Reset Module',
 	'LBL_REMOVE_CUSTOM'=>'Remove Customizations',
@@ -577,7 +600,16 @@ $mod_strings = array(
 		'iframe'=>'IFrame',
 		'encrypt'=>'Encrypt',
 	),
+'labelTypes' => array(
+    "" => "Frequently used labels",
+	"all" => "All Labels",
+),
 	'parent'=>'Flex Relate',
 	'LBL_ILLEGAL_FIELD_VALUE'=>'Drop down key cannot contain quotes.',
 	'LBL_CONFIRM_SAVE_DROPDOWN'=>'You are selecting this item for removal from the dropdown list. Any dropdown fields using this list with this item as a value will no longer display the value, and the value will no longer be able to be selected from the dropdown fields. Are you sure you want to continue?',
+	'LBL_POPHELP_VALIDATE_US_PHONE'=>"Select to validate this field for the entry of a 10-digit<br>" .
+					             "phone number, with allowance for the country code 1, and<br>" .
+                                 "to apply a U.S. format to the phone number when the record<br>" .
+                                 "is saved. The following format will be applied: (xxx) xxx-xxxx.",
+'LBL_ALL_MODULES'=>'All Modules',
 );

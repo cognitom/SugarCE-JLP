@@ -1,7 +1,7 @@
 <?php
 /*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2012 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -32,6 +32,14 @@
  * SugarCRM" logo. If the display of the logo is not reasonably feasible for
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
+ ********************************************************************************/
+
+/*********************************************************************************
+
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
  ********************************************************************************/
 
 $mod_strings = array(
@@ -74,6 +82,8 @@ $mod_strings = array(
 	'LBL_ALLOW_DEFAULT_SELECTION_HELP'=>'When this option is selected, all users will be able to send emails using the same outgoing mail account used to send system notifications and alerts.  If the option is not selected, users can still use the outgoing mail server after providing their own account information.',
 	'LBL_MAILMERGE_DESC'=>'この機能を利用するためには、個々のユーザがSugar Plug-in for Microsoft&reg; Word&reg;をインストールし、かつ、このチェックボックスを有効にする必要があります。',
 	'LBL_MAILMERGE'=>'メールマージ',
+	'LBL_MIN_AUTO_REFRESH_INTERVAL' => 'Minimum Dashlet Auto-Refresh Interval',
+	'LBL_MIN_AUTO_REFRESH_INTERVAL_HELP' => 'This is the minimum value one can choose to have dashlets auto-refresh. Setting to \'Never\' disables auto-refreshing of dashlets entirely.',
 	'LBL_MODULE_FAVICON'=>'Display module icon as favicon',
 	'LBL_MODULE_FAVICON_HELP'=>'If you are in a module with an icon, use the module\'s icon as the favicon, instead of the theme\'s favicon, in the browser tab.',
 	'LBL_MODULE_NAME'=>'システム設定',
@@ -99,6 +109,8 @@ $mod_strings = array(
 	'LBL_SKYPEOUT_TITLE'=>'SkypeOut&reg;',
 	'LBL_USE_REAL_NAMES'=>'フルネームの表示（ログイン以外）',
 	'LBL_USE_REAL_NAMES_DESC'=>'Display users\' full names instead of their User Names in assignment fields.',
+    'LBL_DISALBE_CONVERT_LEAD' => 'Disable convert lead action for converted leads',
+    'LBL_DISALBE_CONVERT_LEAD_DESC' => 'If a lead has already been converted, enabling this option will remove the convert lead action.',
 	'LIST_ENTRIES_PER_LISTVIEW'=>'ページごとに表示するアイテムの数',
 	'LIST_ENTRIES_PER_SUBPANEL'=>'ページごとに表示するアイテムの数(サブパネル)',
 	'LOG_MEMORY_USAGE'=>'メモリ使用状況のログ',
@@ -154,6 +166,9 @@ $mod_strings = array(
 	'LBL_LDAP_AUTO_CREATE_USERS_DESC'=>'認証ユーザが存在しない場合、Sugarにユーザを作成します。',
 	'LBL_LDAP_ENC_KEY'=>'暗号化キー:',
 	'DEVELOPER_MODE'=>'開発者モード',
+	
+	'SHOW_DOWNLOADS_TAB' =>'Display Downloads Tab',
+	'SHOW_DOWNLOADS_TAB_HELP' =>'When selected, the Download tab will appear in the User settings and provide users with access to Sugar plug-ins and other available files',
 	'LBL_LDAP_ENC_KEY_DESC'=>'LDAP使用時のSOAP認証用',
 	'LDAP_ENC_KEY_NO_FUNC_DESC'=>'php.iniファイルのphp_mcryptエクステンションを有効にする必要があります。',
 	'LBL_ALL'=>'すべての',
@@ -180,9 +195,13 @@ $mod_strings = array(
 	'LBL_LOGGER_MAX_LOG_SIZE'=>'ログファイルの最大サイズ',
 	'LBL_LOGGER_DEFAULT_DATE_FORMAT'=>'デフォルトの日付出力形式',
 	'LBL_LOGGER_LOG_LEVEL'=>'ログレベル',
+	'LBL_CONFIG_AJAX' => 'Configure AJAX User Interface',
+        'LBL_CONFIG_AJAX_DESC' => 'Enable or disable the use of the AJAX UI for specific modules.',
 	'LBL_LOGGER_MAX_LOGS'=>'ログファイルの最大数 (ローテーション前)',
 	'LBL_LOGGER_FILENAME_SUFFIX'=>'ファイル名に追加するサフィックス',
 	'LBL_VCAL_PERIOD'=>'vCal更新の周期:',
+	'LBL_IMPORT_MAX_RECORDS' => 'Import - Maximum Number of Rows:',
+    'LBL_IMPORT_MAX_RECORDS_HELP' => 'Specify how many rows are allowed within import files. If the number of rows <br>in an import file exceeds this number, the user will be alerted. If no number<br> is entered, an unlimited number of rows are allowed.',
 	'vCAL_HELP'=>'この設定は、現在に日付から何か月先までのコールおよびミーティングの空き状況を公開かを決定する際に利用されます。</BR>空き状況を公開しない場合は、\"0\"を入力してください。最低期間は1ヶ月です。最大期間は12ヶ月です。',
 	'LBL_PDFMODULE_NAME'=>'PDF Settings',
 	'SUGARPDF_BASIC_SETTINGS'=>'Document Properties',
@@ -265,6 +284,29 @@ $mod_strings = array(
 	'LBL_FONT_LIST_EMBEDDED'=>'Embedded',
 	'LBL_FONT_LIST_EMBEDDED_INFO'=>'Check to embed the font into the PDF file',
 	'LBL_FONT_LIST_CIDINFO'=>'CID Information',
+    'LBL_FONT_LIST_CIDINFO_INFO' => "Examples :".
+"<ul><li>".
+"Chinese Traditional :<br>".
+"<pre>\$enc=\'UniCNS-UTF16-H\';<br>".
+"\$cidinfo=array(\'Registry\'=>\'Adobe\', \'Ordering\'=>\'CNS1\',\'Supplement\'=>0);<br>".
+"include(\'include/tcpdf/fonts/uni2cid_ac15.php\');</pre>".
+"</li><li>".
+"Chinese Simplified :<br>".
+"<pre>\$enc=\'UniGB-UTF16-H\';<br>".
+"\$cidinfo=array(\'Registry\'=>\'Adobe\', \'Ordering\'=>\'GB1\',\'Supplement\'=>2);<br>".
+"include(\'include/tcpdf/fonts/uni2cid_ag15.php\');</pre>".
+"</li><li>".
+"Korean :<br>".
+"<pre>\$enc=\'UniKS-UTF16-H\';<br>".
+"\$cidinfo=array(\'Registry\'=>\'Adobe\', \'Ordering\'=>\'Korea1\',\'Supplement\'=>0);<br>".
+"include(\'include/tcpdf/fonts/uni2cid_ak12.php\');</pre>".
+"</li><li>".
+"Japanese :<br>".
+"<pre>\$enc=\'UniJIS-UTF16-H\';<br>".
+"\$cidinfo=array(\'Registry\'=>\'Adobe\', \'Ordering\'=>\'Japan1\',\'Supplement\'=>5);<br>".
+"include(\'include/tcpdf/fonts/uni2cid_aj16.php\');</pre>".
+"</li></ul>".
+"More help : www.tcpdf.org",
 	'LBL_FONT_LIST_CIDINFO_INFO'=>'Examples :<ul><li>Chinese Traditional :<br><pre>$enc=\\\'UniCNS-UTF16-H\\\';<br>$cidinfo=array(\\\'Registry\\\'=>\\\'Adobe\\\', \\\'Ordering\\\'=>\\\'CNS1\\\',\\\'Supplement\\\'=>0);<br>include(\\\'include/tcpdf/fonts/uni2cid_ac15.php\\\');</pre></li><li>Chinese Simplified :<br><pre>$enc=\\\'UniGB-UTF16-H\\\';<br>$cidinfo=array(\\\'Registry\\\'=>\\\'Adobe\\\', \\\'Ordering\\\'=>\\\'GB1\\\',\\\'Supplement\\\'=>2);<br>include(\\\'include/tcpdf/fonts/uni2cid_ag15.php\\\');</pre></li><li>Korean :<br><pre>$enc=\\\'UniKS-UTF16-H\\\';<br>$cidinfo=array(\\\'Registry\\\'=>\\\'Adobe\\\', \\\'Ordering\\\'=>\\\'Korea1\\\',\\\'Supplement\\\'=>0);<br>include(\\\'include/tcpdf/fonts/uni2cid_ak12.php\\\');</pre></li><li>Japanese :<br><pre>$enc=\\\'UniJIS-UTF16-H\\\';<br>$cidinfo=array(\\\'Registry\\\'=>\\\'Adobe\\\', \\\'Ordering\\\'=>\\\'Japan1\\\',\\\'Supplement\\\'=>5);<br>include(\\\'include/tcpdf/fonts/uni2cid_aj16.php\\\');</pre></li></ul>More help : www.tcpdf.org',
 	'LBL_FONT_LIST_FILESIZE'=>'Font Size (KB)',
 	'LBL_ADD_FONT'=>'Add a font',
@@ -283,7 +325,8 @@ $mod_strings = array(
 	'LBL_ADD_FONT_BUTTON'=>'Add',
 	'JS_ALERT_PDF_WRONG_EXTENSION'=>'This file do not have a good file extension.',
 	'LBL_PDF_INSTRUCTIONS'=>'Instructions',
-	'PDF_INSTRUCTIONS_ADD_FONT'=>'Fonts supported by SugarPDF :
+    'PDF_INSTRUCTIONS_ADD_FONT' => <<<BSOFR
+Fonts supported by SugarPDF :
 <ul>
 <li>TrueTypeUnicode (UTF-8 Unicode)</li>
 <li>OpenTypeUnicode</li>
@@ -295,9 +338,11 @@ $mod_strings = array(
 <br>
 If you choose to not embed your font in the PDF, the generated PDF file will be lighter but a substitution will be use if the font is not available in the system of your reader.
 <br><br>
-Adding a PDF font to SugarCRM requires to follow steps 1 and 2 of the TCPDF Fonts documentation available in the \"DOCS\" section of the <a href=\"http://www.tcpdf.org\" target=\"_blank\">TCPDF website</a>.
-<br><br>The pfm2afm and ttf2ufm utils are available in fonts/utils in the TCPDF package that you can download on the \"DOWNLOAD\" section of the <a href=\"http://www.tcpdf.org\" target=\"_blank\">TCPDF website</a>.
-<br><br>Load the metric file generated in step 2 and your font file below.',
+Adding a PDF font to SugarCRM requires to follow steps 1 and 2 of the TCPDF Fonts documentation available in the "DOCS" section of the <a href="http://www.tcpdf.org" target="_blank">TCPDF website</a>.
+<br><br>The pfm2afm and ttf2ufm utils are available in fonts/utils in the TCPDF package that you can download on the "DOWNLOAD" section of the <a href="http://www.tcpdf.org" target="_blank">TCPDF website</a>.
+<br><br>Load the metric file generated in step 2 and your font file below.
+BSOFR
+,
 	'ERR_MISSING_CIDINFO'=>'The field CID Information cannot be empty.',
 	'LBL_ADDFONTRESULT_TITLE'=>'Result of the add font process',
 	'LBL_STATUS_FONT_SUCCESS'=>'SUCCESS : The font has been added to SugarCRM.',
@@ -333,4 +378,12 @@ To configure additional system settings, click <a href=\"index.php?module=Admini
 	'LBL_WIZARD_LOCALE_DESC'=>'Specify how you would like data in Sugar to be displayed, based on your geographical location. The settings you provide here will be the default settings. Users will be able set their own preferences.',
 	'LBL_WIZARD_SMTP_DESC'=>'Provide the email account that will be used to send emails, such as the assignment notifications and new user passwords. Users will receive emails from Sugar, as sent from the specified email account.',
 	'LBL_MOBILE_MOD_REPORTS_RESTRICTION'=>'* The Reports module is only available for the Sugar Mobile iPhone client.',
+	'LBL_GMAIL_LOGO' => 'Gmail Logo' /*for 508 compliance fix*/,
+	'LBL_YAHOO_MAIL' => 'Yahoo Mail' /*for 508 compliance fix*/,
+	'LBL_EXCHANGE_LOGO' => 'Exchange' /*for 508 compliance fix*/,
+	'LBL_LOADING' => 'Loading...' /*for 508 compliance fix*/,
+	'LBL_DELETE' => 'Delete' /*for 508 compliance fix*/,
+	'LBL_WELCOME' => 'Welcome' /*for 508 compliance fix*/,
+	'LBL_LOGO' => 'Logo' /*for 508 compliance fix*/,
+    'LBL_MOBILE_MOD_REPORTS_RESTRICTION' => '* The Reports module is only available for the Sugar Mobile native clients',
 );
